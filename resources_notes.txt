@@ -1,0 +1,24 @@
+Resources:
+
+Book: Extending the linear model with R
+Book: Nonparametric regression models for longitudinal data analysis
+choosing family and link function: https://stats.stackexchange.com/questions/190763/how-to-decide-which-glm-family-to-use
+Unstructured covariance structure in statsmodels package:
+https://github.com/statsmodels/statsmodels/issues/7005
+Blog on GEE in R:
+https://rlbarter.github.io/Practical-Statistics/2017/05/10/generalized-estimating-equations-gee/
+Intro to GEEs:
+https://online.stat.psu.edu/stat504/lesson/12/12.1
+Book: Longitudinal data analysis
+https://onlinelibrary.wiley.com/doi/full/10.1002/sim.6947 - applying GEES to longitudinal data with missing data points
+GEE methods: https://www.statsmodels.org/stable/generated/statsmodels.genmod.generalized_estimating_equations.GEEResults.html#statsmodels.genmod.generalized_estimating_equations.GEEResults
+
+Reference on Contrast coding in Statsmodels:
+https://www.statsmodels.org/dev/examples/notebooks/generated/contrasts.html
+
+https://datascienceplus.com/interpreting-three-way-interactions-in-r/
+
+See here about comparing deviance between models:
+https://stats.stackexchange.com/questions/83990/deviance-in-generalized-linear-models-for-different-families
+
+NB: Model selection for GEEs https://www.tandfonline.com/doi/full/10.1080/03610910701539617
