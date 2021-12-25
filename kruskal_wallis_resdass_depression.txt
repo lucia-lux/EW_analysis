@@ -1,0 +1,6 @@
+Outcome:dass_depression,
+stats: KruskalResult(statistic=1.7127808379438691, pvalue=0.19062496815948377)
+Posthoc:
+1 = EW, 2 = CTR,           1         2
+1  1.000000  0.190625
+2  0.190625  1.000000

@@ -1,0 +1,6 @@
+Outcome:dass_stress,
+stats: KruskalResult(statistic=0.06459009406178311, pvalue=0.79938291162651)
+Posthoc:
+1 = EW, 2 = CTR,           1         2
+1  1.000000  0.799383
+2  0.799383  1.000000
