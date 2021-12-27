@@ -1,0 +1,39 @@
+ADNM_burden_total:
+                               GEE Regression Results                              
+===================================================================================
+Dep. Variable:           ADNM_burden_total   No. Observations:                  465
+Model:                                 GEE   No. clusters:                      119
+Method:                        Generalized   Min. cluster size:                   2
+                      Estimating Equations   Max. cluster size:                   4
+Family:                            Tweedie   Mean cluster size:                 3.9
+Dependence structure:       Autoregressive   Num. iterations:                    11
+Date:                     Mon, 27 Dec 2021   Scale:                           3.635
+Covariance type:                    robust   Time:                         18:12:38
+===============================================================================================================================================
+                                                                                  coef    std err          z      P>|z|      [0.025      0.975]
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Intercept                                                                       3.9720      0.032    122.879      0.000       3.909       4.035
+C(time)[T.2.0]                                                                 -0.0360      0.036     -0.997      0.319      -0.107       0.035
+C(time)[T.4.0]                                                                 -0.0690      0.041     -1.696      0.090      -0.149       0.011
+C(time)[T.12.0]                                                                -0.1060      0.058     -1.825      0.068      -0.220       0.008
+C(Group_act_v_ctr, Treatment('CTR'))[T.EW]                                     -0.0123      0.037     -0.335      0.738      -0.084       0.060
+C(time)[T.2.0]:C(Group_act_v_ctr, Treatment('CTR'))[T.EW]                       0.0148      0.045      0.331      0.740      -0.073       0.102
+C(time)[T.4.0]:C(Group_act_v_ctr, Treatment('CTR'))[T.EW]                      -0.0231      0.052     -0.442      0.658      -0.125       0.079
+C(time)[T.12.0]:C(Group_act_v_ctr, Treatment('CTR'))[T.EW]                     -0.0194      0.070     -0.275      0.783      -0.157       0.119
+RRS_total_scaled                                                                0.0185      0.035      0.524      0.600      -0.051       0.088
+C(time)[T.2.0]:RRS_total_scaled                                                -0.0171      0.039     -0.440      0.660      -0.093       0.059
+C(time)[T.4.0]:RRS_total_scaled                                                 0.0713      0.038      1.867      0.062      -0.004       0.146
+C(time)[T.12.0]:RRS_total_scaled                                               -0.0100      0.057     -0.175      0.861      -0.122       0.102
+C(Group_act_v_ctr, Treatment('CTR'))[T.EW]:RRS_total_scaled                     0.0309      0.039      0.789      0.430      -0.046       0.108
+C(time)[T.2.0]:C(Group_act_v_ctr, Treatment('CTR'))[T.EW]:RRS_total_scaled      0.0315      0.046      0.683      0.495      -0.059       0.122
+C(time)[T.4.0]:C(Group_act_v_ctr, Treatment('CTR'))[T.EW]:RRS_total_scaled     -0.0054      0.049     -0.110      0.912      -0.102       0.092
+C(time)[T.12.0]:C(Group_act_v_ctr, Treatment('CTR'))[T.EW]:RRS_total_scaled    -0.0017      0.076     -0.023      0.982      -0.150       0.147
+==============================================================================
+Skew:                         -1.0176   Kurtosis:                       2.3983
+Centered skew:                -1.2516   Centered kurtosis:              6.6872
+==============================================================================
+ADNM_burden_total:
+  dependency type          QIC        QICu
+0    Independence  2145.512009  634.029036
+1    Exchangeable  2014.596957  634.587662
+2  Autoregressive  2165.948356  632.805012

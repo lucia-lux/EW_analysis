@@ -1,0 +1,31 @@
+dass_depression:
+                               GEE Regression Results                              
+===================================================================================
+Dep. Variable:             dass_depression   No. Observations:                  469
+Model:                                 GEE   No. clusters:                      119
+Method:                        Generalized   Min. cluster size:                   2
+                      Estimating Equations   Max. cluster size:                   4
+Family:                            Tweedie   Mean cluster size:                 3.9
+Dependence structure:       Autoregressive   Num. iterations:                     8
+Date:                     Mon, 27 Dec 2021   Scale:                           7.175
+Covariance type:                    robust   Time:                         18:12:45
+==============================================================================================================================
+                                                                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------------------------
+Intercept                                                      2.8094      0.095     29.722      0.000       2.624       2.995
+C(time)[T.2.0]                                                 0.0295      0.105      0.280      0.780      -0.177       0.236
+C(time)[T.4.0]                                                -0.1990      0.115     -1.735      0.083      -0.424       0.026
+C(time)[T.12.0]                                               -0.0264      0.112     -0.236      0.814      -0.246       0.193
+C(Group_act_v_ctr, Treatment('CTR'))[T.EW]                    -0.1315      0.125     -1.051      0.293      -0.377       0.114
+C(time)[T.2.0]:C(Group_act_v_ctr, Treatment('CTR'))[T.EW]     -0.0943      0.128     -0.736      0.461      -0.345       0.157
+C(time)[T.4.0]:C(Group_act_v_ctr, Treatment('CTR'))[T.EW]      0.2063      0.145      1.426      0.154      -0.077       0.490
+C(time)[T.12.0]:C(Group_act_v_ctr, Treatment('CTR'))[T.EW]    -0.1829      0.157     -1.166      0.244      -0.490       0.125
+==============================================================================
+Skew:                          0.6282   Kurtosis:                      -0.2955
+Centered skew:                 0.4245   Centered kurtosis:              1.3545
+==============================================================================
+dass_depression:
+  dependency type         QIC        QICu
+0    Independence  716.463652  509.286921
+1    Exchangeable  717.787439  510.122102
+2  Autoregressive  725.809771  508.657792

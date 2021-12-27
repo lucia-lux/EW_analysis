@@ -1,0 +1,39 @@
+ADNM_burden_total:
+                               GEE Regression Results                              
+===================================================================================
+Dep. Variable:           ADNM_burden_total   No. Observations:                  465
+Model:                                 GEE   No. clusters:                      119
+Method:                        Generalized   Min. cluster size:                   2
+                      Estimating Equations   Max. cluster size:                   4
+Family:                            Tweedie   Mean cluster size:                 3.9
+Dependence structure:       Autoregressive   Num. iterations:                    11
+Date:                     Mon, 27 Dec 2021   Scale:                           3.969
+Covariance type:                    robust   Time:                         18:12:36
+=============================================================================================================================================
+                                                                                coef    std err          z      P>|z|      [0.025      0.975]
+---------------------------------------------------------------------------------------------------------------------------------------------
+Intercept                                                                     3.9701      0.032    124.036      0.000       3.907       4.033
+C(time)[T.2.0]                                                               -0.0370      0.036     -1.037      0.300      -0.107       0.033
+C(time)[T.4.0]                                                               -0.0462      0.043     -1.079      0.281      -0.130       0.038
+C(time)[T.12.0]                                                              -0.1005      0.058     -1.746      0.081      -0.213       0.012
+C(Group_act_v_ctr, Treatment('CTR'))[T.EW]                                   -0.0059      0.038     -0.157      0.875      -0.080       0.068
+C(time)[T.2.0]:C(Group_act_v_ctr, Treatment('CTR'))[T.EW]                     0.0157      0.044      0.354      0.724      -0.071       0.103
+C(time)[T.4.0]:C(Group_act_v_ctr, Treatment('CTR'))[T.EW]                    -0.0457      0.054     -0.844      0.398      -0.152       0.060
+C(time)[T.12.0]:C(Group_act_v_ctr, Treatment('CTR'))[T.EW]                   -0.0289      0.070     -0.412      0.681      -0.167       0.109
+ERQ_sup_scaled                                                               -0.0149      0.022     -0.683      0.494      -0.058       0.028
+C(time)[T.2.0]:ERQ_sup_scaled                                                 0.0198      0.029      0.691      0.489      -0.036       0.076
+C(time)[T.4.0]:ERQ_sup_scaled                                                 0.0916      0.036      2.555      0.011       0.021       0.162
+C(time)[T.12.0]:ERQ_sup_scaled                                                0.0429      0.055      0.775      0.438      -0.066       0.151
+C(Group_act_v_ctr, Treatment('CTR'))[T.EW]:ERQ_sup_scaled                     0.0298      0.030      1.005      0.315      -0.028       0.088
+C(time)[T.2.0]:C(Group_act_v_ctr, Treatment('CTR'))[T.EW]:ERQ_sup_scaled      0.0069      0.037      0.184      0.854      -0.066       0.080
+C(time)[T.4.0]:C(Group_act_v_ctr, Treatment('CTR'))[T.EW]:ERQ_sup_scaled     -0.0502      0.046     -1.087      0.277      -0.141       0.040
+C(time)[T.12.0]:C(Group_act_v_ctr, Treatment('CTR'))[T.EW]:ERQ_sup_scaled    -0.0065      0.066     -0.098      0.922      -0.136       0.123
+==============================================================================
+Skew:                         -0.8917   Kurtosis:                       1.8975
+Centered skew:                -1.2308   Centered kurtosis:              6.4840
+==============================================================================
+ADNM_burden_total:
+  dependency type          QIC        QICu
+0    Independence  1941.526068  621.508165
+1    Exchangeable  1818.840053  622.142542
+2  Autoregressive  1866.620202  621.610045

@@ -1,0 +1,39 @@
+dass_depression:
+                               GEE Regression Results                              
+===================================================================================
+Dep. Variable:             dass_depression   No. Observations:                  469
+Model:                                 GEE   No. clusters:                      119
+Method:                        Generalized   Min. cluster size:                   2
+                      Estimating Equations   Max. cluster size:                   4
+Family:                            Tweedie   Mean cluster size:                 3.9
+Dependence structure:       Autoregressive   Num. iterations:                    10
+Date:                     Mon, 27 Dec 2021   Scale:                           7.181
+Covariance type:                    robust   Time:                         18:12:49
+=============================================================================================================================================
+                                                                                coef    std err          z      P>|z|      [0.025      0.975]
+---------------------------------------------------------------------------------------------------------------------------------------------
+Intercept                                                                     2.7858      0.096     29.077      0.000       2.598       2.974
+C(time)[T.2.0]                                                                0.0463      0.104      0.446      0.656      -0.157       0.250
+C(time)[T.4.0]                                                               -0.1212      0.095     -1.279      0.201      -0.307       0.065
+C(time)[T.12.0]                                                              -0.0053      0.096     -0.055      0.956      -0.194       0.183
+C(Group_act_v_ctr, Treatment('CTR'))[T.EW]                                   -0.1083      0.125     -0.867      0.386      -0.353       0.137
+C(time)[T.2.0]:C(Group_act_v_ctr, Treatment('CTR'))[T.EW]                    -0.1589      0.127     -1.251      0.211      -0.408       0.090
+C(time)[T.4.0]:C(Group_act_v_ctr, Treatment('CTR'))[T.EW]                     0.1257      0.130      0.965      0.335      -0.130       0.381
+C(time)[T.12.0]:C(Group_act_v_ctr, Treatment('CTR'))[T.EW]                   -0.2011      0.144     -1.398      0.162      -0.483       0.081
+ERQ_sup_scaled                                                                0.0923      0.071      1.301      0.193      -0.047       0.231
+C(time)[T.2.0]:ERQ_sup_scaled                                                -0.0103      0.104     -0.099      0.921      -0.213       0.193
+C(time)[T.4.0]:ERQ_sup_scaled                                                 0.2696      0.102      2.647      0.008       0.070       0.469
+C(time)[T.12.0]:ERQ_sup_scaled                                                0.1607      0.108      1.487      0.137      -0.051       0.372
+C(Group_act_v_ctr, Treatment('CTR'))[T.EW]:ERQ_sup_scaled                    -0.0054      0.103     -0.052      0.959      -0.208       0.197
+C(time)[T.2.0]:C(Group_act_v_ctr, Treatment('CTR'))[T.EW]:ERQ_sup_scaled      0.1511      0.130      1.160      0.246      -0.104       0.406
+C(time)[T.4.0]:C(Group_act_v_ctr, Treatment('CTR'))[T.EW]:ERQ_sup_scaled     -0.3142      0.136     -2.318      0.020      -0.580      -0.049
+C(time)[T.12.0]:C(Group_act_v_ctr, Treatment('CTR'))[T.EW]:ERQ_sup_scaled    -0.1948      0.151     -1.286      0.198      -0.492       0.102
+==============================================================================
+Skew:                          0.5880   Kurtosis:                      -0.3282
+Centered skew:                 0.4471   Centered kurtosis:              1.3850
+==============================================================================
+dass_depression:
+  dependency type         QIC        QICu
+0    Independence  910.199067  516.228792
+1    Exchangeable  845.479863  515.222362
+2  Autoregressive  882.167361  514.161037

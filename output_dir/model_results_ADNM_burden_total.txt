@@ -1,0 +1,31 @@
+ADNM_burden_total:
+                               GEE Regression Results                              
+===================================================================================
+Dep. Variable:           ADNM_burden_total   No. Observations:                  465
+Model:                                 GEE   No. clusters:                      119
+Method:                        Generalized   Min. cluster size:                   2
+                      Estimating Equations   Max. cluster size:                   4
+Family:                            Tweedie   Mean cluster size:                 3.9
+Dependence structure:       Autoregressive   Num. iterations:                    10
+Date:                     Mon, 27 Dec 2021   Scale:                           3.966
+Covariance type:                    robust   Time:                         18:12:32
+==============================================================================================================================
+                                                                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------------------------
+Intercept                                                      3.9691      0.032    123.303      0.000       3.906       4.032
+C(time)[T.2.0]                                                -0.0339      0.037     -0.922      0.357      -0.106       0.038
+C(time)[T.4.0]                                                -0.0618      0.045     -1.366      0.172      -0.151       0.027
+C(time)[T.12.0]                                               -0.1028      0.059     -1.740      0.082      -0.219       0.013
+C(Group_act_v_ctr, Treatment('CTR'))[T.EW]                    -0.0051      0.038     -0.135      0.893      -0.079       0.068
+C(time)[T.2.0]:C(Group_act_v_ctr, Treatment('CTR'))[T.EW]      0.0183      0.045      0.410      0.682      -0.069       0.106
+C(time)[T.4.0]:C(Group_act_v_ctr, Treatment('CTR'))[T.EW]     -0.0276      0.056     -0.492      0.623      -0.137       0.082
+C(time)[T.12.0]:C(Group_act_v_ctr, Treatment('CTR'))[T.EW]    -0.0287      0.072     -0.400      0.689      -0.169       0.112
+==============================================================================
+Skew:                         -0.9166   Kurtosis:                       1.8562
+Centered skew:                -1.1855   Centered kurtosis:              6.2767
+==============================================================================
+ADNM_burden_total:
+  dependency type          QIC        QICu
+0    Independence  1387.926626  616.740255
+1    Exchangeable  1377.220799  617.461643
+2  Autoregressive  1404.219462  616.936583

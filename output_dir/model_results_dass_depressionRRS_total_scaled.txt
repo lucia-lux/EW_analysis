@@ -1,0 +1,39 @@
+dass_depression:
+                               GEE Regression Results                              
+===================================================================================
+Dep. Variable:             dass_depression   No. Observations:                  469
+Model:                                 GEE   No. clusters:                      119
+Method:                        Generalized   Min. cluster size:                   2
+                      Estimating Equations   Max. cluster size:                   4
+Family:                            Tweedie   Mean cluster size:                 3.9
+Dependence structure:       Autoregressive   Num. iterations:                    11
+Date:                     Mon, 27 Dec 2021   Scale:                           6.287
+Covariance type:                    robust   Time:                         18:12:51
+===============================================================================================================================================
+                                                                                  coef    std err          z      P>|z|      [0.025      0.975]
+-----------------------------------------------------------------------------------------------------------------------------------------------
+Intercept                                                                       2.7989      0.087     32.218      0.000       2.629       2.969
+C(time)[T.2.0]                                                                  0.0307      0.099      0.310      0.757      -0.163       0.225
+C(time)[T.4.0]                                                                 -0.2233      0.102     -2.186      0.029      -0.424      -0.023
+C(time)[T.12.0]                                                                -0.0278      0.116     -0.239      0.811      -0.256       0.200
+C(Group_act_v_ctr, Treatment('CTR'))[T.EW]                                     -0.2068      0.117     -1.763      0.078      -0.437       0.023
+C(time)[T.2.0]:C(Group_act_v_ctr, Treatment('CTR'))[T.EW]                      -0.0710      0.120     -0.593      0.553      -0.306       0.164
+C(time)[T.4.0]:C(Group_act_v_ctr, Treatment('CTR'))[T.EW]                       0.2900      0.129      2.246      0.025       0.037       0.543
+C(time)[T.12.0]:C(Group_act_v_ctr, Treatment('CTR'))[T.EW]                     -0.1056      0.154     -0.684      0.494      -0.408       0.197
+RRS_total_scaled                                                                0.2387      0.092      2.599      0.009       0.059       0.419
+C(time)[T.2.0]:RRS_total_scaled                                                -0.1888      0.097     -1.948      0.051      -0.379       0.001
+C(time)[T.4.0]:RRS_total_scaled                                                 0.0317      0.114      0.278      0.781      -0.192       0.255
+C(time)[T.12.0]:RRS_total_scaled                                               -0.0597      0.116     -0.514      0.607      -0.287       0.168
+C(Group_act_v_ctr, Treatment('CTR'))[T.EW]:RRS_total_scaled                     0.1453      0.121      1.198      0.231      -0.093       0.383
+C(time)[T.2.0]:C(Group_act_v_ctr, Treatment('CTR'))[T.EW]:RRS_total_scaled      0.0483      0.124      0.390      0.697      -0.195       0.291
+C(time)[T.4.0]:C(Group_act_v_ctr, Treatment('CTR'))[T.EW]:RRS_total_scaled     -0.1936      0.143     -1.356      0.175      -0.473       0.086
+C(time)[T.12.0]:C(Group_act_v_ctr, Treatment('CTR'))[T.EW]:RRS_total_scaled    -0.0989      0.157     -0.632      0.528      -0.406       0.208
+==============================================================================
+Skew:                          0.5941   Kurtosis:                       0.2464
+Centered skew:                 0.1259   Centered kurtosis:              1.3656
+==============================================================================
+dass_depression:
+  dependency type         QIC        QICu
+0    Independence  966.071244  502.453346
+1    Exchangeable  884.468387  504.247584
+2  Autoregressive  933.128148  506.847372

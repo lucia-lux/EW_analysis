@@ -1,0 +1,39 @@
+dass_anxiety:
+                               GEE Regression Results                              
+===================================================================================
+Dep. Variable:                dass_anxiety   No. Observations:                  469
+Model:                                 GEE   No. clusters:                      119
+Method:                        Generalized   Min. cluster size:                   2
+                      Estimating Equations   Max. cluster size:                   4
+Family:                            Tweedie   Mean cluster size:                 3.9
+Dependence structure:         Independence   Num. iterations:                     2
+Date:                     Mon, 27 Dec 2021   Scale:                           7.311
+Covariance type:                    robust   Time:                         18:12:42
+=============================================================================================================================================
+                                                                                coef    std err          z      P>|z|      [0.025      0.975]
+---------------------------------------------------------------------------------------------------------------------------------------------
+Intercept                                                                     2.1928      0.133     16.429      0.000       1.931       2.454
+C(time)[T.2.0]                                                                0.0044      0.104      0.043      0.966      -0.198       0.207
+C(time)[T.4.0]                                                                0.0097      0.122      0.079      0.937      -0.230       0.250
+C(time)[T.12.0]                                                              -0.0146      0.109     -0.135      0.893      -0.228       0.198
+C(Group_act_v_ctr, Treatment('CTR'))[T.EW]                                   -0.2485      0.172     -1.446      0.148      -0.585       0.088
+C(time)[T.2.0]:C(Group_act_v_ctr, Treatment('CTR'))[T.EW]                     0.0929      0.130      0.716      0.474      -0.161       0.347
+C(time)[T.4.0]:C(Group_act_v_ctr, Treatment('CTR'))[T.EW]                     0.1319      0.165      0.798      0.425      -0.192       0.456
+C(time)[T.12.0]:C(Group_act_v_ctr, Treatment('CTR'))[T.EW]                    0.0686      0.154      0.445      0.656      -0.233       0.371
+ERQ_sup_scaled                                                                0.0553      0.127      0.434      0.665      -0.194       0.305
+C(time)[T.2.0]:ERQ_sup_scaled                                                 0.0934      0.105      0.890      0.373      -0.112       0.299
+C(time)[T.4.0]:ERQ_sup_scaled                                                 0.2267      0.228      0.992      0.321      -0.221       0.674
+C(time)[T.12.0]:ERQ_sup_scaled                                                0.1632      0.153      1.065      0.287      -0.137       0.464
+C(Group_act_v_ctr, Treatment('CTR'))[T.EW]:ERQ_sup_scaled                    -0.0828      0.163     -0.509      0.611      -0.402       0.236
+C(time)[T.2.0]:C(Group_act_v_ctr, Treatment('CTR'))[T.EW]:ERQ_sup_scaled      0.0281      0.150      0.188      0.851      -0.265       0.322
+C(time)[T.4.0]:C(Group_act_v_ctr, Treatment('CTR'))[T.EW]:ERQ_sup_scaled     -0.2377      0.259     -0.919      0.358      -0.745       0.269
+C(time)[T.12.0]:C(Group_act_v_ctr, Treatment('CTR'))[T.EW]:ERQ_sup_scaled    -0.1009      0.198     -0.509      0.611      -0.489       0.287
+==============================================================================
+Skew:                          1.4323   Kurtosis:                       2.1609
+Centered skew:                 0.0534   Centered kurtosis:              2.3761
+==============================================================================
+dass_anxiety:
+  dependency type         QIC        QICu
+0    Independence  674.874995  462.781559
+1    Exchangeable  606.385428  461.152839
+2  Autoregressive         NaN         NaN

@@ -1,8 +1,6 @@
 Outcome:ADNM_burden_total,
-stats: KruskalResult(statistic=0.44689608287786564, pvalue=0.7997564449821521)
+stats: KruskalResult(statistic=0.17369314944962796, pvalue=0.6768502313466718)
 Posthoc:
-1 = EW, 2 = EWRE, 3 = CTR
-      1    2    3
-1  1.0  1.0  1.0
-2  1.0  1.0  1.0
-3  1.0  1.0  1.0
+1 = EW, 2 = CTR,          1        2
+1  1.00000  0.67685
+2  0.67685  1.00000

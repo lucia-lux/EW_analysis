@@ -1,0 +1,31 @@
+dass_stress:
+                               GEE Regression Results                              
+===================================================================================
+Dep. Variable:                 dass_stress   No. Observations:                  469
+Model:                                 GEE   No. clusters:                      119
+Method:                        Generalized   Min. cluster size:                   2
+                      Estimating Equations   Max. cluster size:                   4
+Family:                            Tweedie   Mean cluster size:                 3.9
+Dependence structure:       Autoregressive   Num. iterations:                     9
+Date:                     Mon, 27 Dec 2021   Scale:                           5.359
+Covariance type:                    robust   Time:                         18:12:52
+==============================================================================================================================
+                                                                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------------------------
+Intercept                                                      2.7172      0.104     26.150      0.000       2.514       2.921
+C(time)[T.2.0]                                                 0.0793      0.099      0.800      0.424      -0.115       0.274
+C(time)[T.4.0]                                                -0.0115      0.100     -0.114      0.909      -0.208       0.185
+C(time)[T.12.0]                                                0.1703      0.103      1.659      0.097      -0.031       0.371
+C(Group_act_v_ctr, Treatment('CTR'))[T.EW]                     0.0213      0.119      0.179      0.858      -0.212       0.255
+C(time)[T.2.0]:C(Group_act_v_ctr, Treatment('CTR'))[T.EW]     -0.0318      0.116     -0.273      0.785      -0.260       0.196
+C(time)[T.4.0]:C(Group_act_v_ctr, Treatment('CTR'))[T.EW]     -0.0064      0.118     -0.054      0.957      -0.239       0.226
+C(time)[T.12.0]:C(Group_act_v_ctr, Treatment('CTR'))[T.EW]    -0.3487      0.126     -2.767      0.006      -0.596      -0.102
+==============================================================================
+Skew:                          0.5289   Kurtosis:                      -0.1053
+Centered skew:                 0.2580   Centered kurtosis:              0.9124
+==============================================================================
+dass_stress:
+  dependency type         QIC        QICu
+0    Independence  752.072918  517.439691
+1    Exchangeable  749.713167  518.019640
+2  Autoregressive  762.070905  519.805603

@@ -1,8 +1,6 @@
 Outcome:dass_anxiety,
-stats: KruskalResult(statistic=6.008011290707204, pvalue=0.04958803791760934)
+stats: KruskalResult(statistic=2.299515648489076, pvalue=0.12941434884273248)
 Posthoc:
-1 = EW, 2 = EWRE, 3 = CTR
-           1         2         3
-1  1.000000  0.162408  0.067339
-2  0.162408  1.000000  1.000000
-3  0.067339  1.000000  1.000000
+1 = EW, 2 = CTR,           1         2
+1  1.000000  0.129414
+2  0.129414  1.000000
