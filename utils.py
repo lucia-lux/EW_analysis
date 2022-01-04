@@ -4,8 +4,11 @@ import scikit_posthocs as sp
 import seaborn as sns
 import statsmodels.api as sm
 import statsmodels.formula.api as smf
+import nltk
+import numpy as np
 from scipy import stats
 from scipy import stats
+from nltk import FreqDist
 
 def kruskal_dunns_func(in_df, time_col, group_name, time_point,outcome):
     """
@@ -152,3 +155,145 @@ def model_checks(data_df, columns_to_use, y_to_use,GEE_res):
     g = (g.set_axis_labels("Predicted score", "Deviance residuals"))#.set(xlim=(42, 55)))
     g = sns.lmplot(x = "time", y = "resid_dev", hue = "Group", data = gee_res_df)
     g = (g.set_axis_labels("Time [Weeks]", "Deviance residuals").set(xlim=(-1, 14)))
+
+def flatten_list(list_of_lists):
+    """
+    Flatten list of lists.
+
+    Parameters
+    ----------
+    list_of_lists:  list
+        list of lists to flatten
+    
+    Returns
+    -------
+    Flattened list.
+    """
+    return [item for sub_list in list_of_lists for item in sub_list]
+
+
+def get_top_words(day_col, num_day, group_col, group_name, in_df, token_col_name, **pos_tag_type):
+    """ 
+    Get an ordered list of words in document.
+
+    Parameters
+    ----------
+    day_col:    str
+        Name of df column indicating day of writing
+    num_day:    int
+        Day of writing (1, 2, 3 or 4)
+    group_col:  str
+        Name of group column in df
+    group_name: str
+        The group to process (EW, EWRE or CTR)
+    in_df:  pd DataFrame
+        input dataframe containing rel data
+    token_col_name: str
+        Name of column containing tokenized text
+    **pos_tag_type: str/list of str
+        If processing only nouns/verbs/adjectives
+        pass tag to function using kwargs.
+        For adjectives, use:
+        'JJ'
+        For verbs, use:
+        'VB'
+        For nouns, use:
+        'NN'
+        If all of the above, pass list:
+        ['NN','JJ','VB']
+        as kwarg.
+
+    Returns
+    -------
+    list of words, list of vals
+    words = words ordered from most frequent to rare
+    vals = corresponding frequency
+    """
+    token_list = [
+                item for sublist in
+                [*in_df.loc[
+                (in_df[group_col] == group_name) &
+                (in_df[day_col] == num_day),
+                token_col_name]]
+                for item in sublist
+                ]
+
+    
+    if pos_tag_type:
+        selected_list = []
+        for tag_type in pos_tag_type.values():
+            w_list = [
+                    word for (word,pos) 
+                    in nltk.pos_tag(token_list)
+                    for tag in tag_type
+                    if pos[:2] == tag
+                    ]
+            selected_list.extend(w_list)
+    else:
+        selected_list = token_list
+    selected_list = func_stem(selected_list)
+    freqs = FreqDist(selected_list)
+    common_tups = freqs.most_common()
+    common_words = list(zip(*common_tups))[0]
+    common_vals = list(zip(*common_tups))[1]
+    return common_words, common_vals
+
+def func_top_words(in_df, pos_tags, visualize):
+    """
+    Put top 50 words in dataframe,
+    with option to visualize using barplots.
+
+    Parameters
+    ----------
+    in_df:  pd DataFrame
+    input dataframe
+    pos_tags:   list
+        list of pos tags to use
+        can be VB, JJ, NN or
+        any combination (or all) of these
+    visualize:  int
+    1 if visualization is needed
+    0 otherwise
+
+    Returns
+    -------
+    Datframe of 50 top words
+    and their frequencies for 
+    all days and conditions.
+
+    """
+
+    top_50_words = []
+    top_50_vals = []
+    condition = []
+    days = []
+
+    for group_name in in_df.Group.unique():
+        for day in in_df.day.unique():
+            words,vals= get_top_words('day', day, 'Group', group_name, in_df, 'writing_tokens', pos_tags = pos_tags)
+            top_50_words.append(list(words[:50]))
+            top_50_vals.append(list(vals[:50]))
+            condition.append(np.repeat(group_name,50))
+            days.append(np.repeat(day,50))
+
+    data = {
+        'words': flatten_list(top_50_words),
+        'vals': flatten_list(top_50_vals),
+        'day': flatten_list(days),
+        'group': flatten_list(condition)
+        }
+    most_common_words_df = pd.DataFrame(data)
+
+    if visualize:
+        for num_day in most_common_words_df.day.unique():
+            fig,axes = plt.subplots(3,1,figsize = (30,15),sharey = True)
+            for i,group_name in enumerate(most_common_words_df.group.unique()):
+                data = most_common_words_df.loc[
+                                                (most_common_words_df.day==num_day) &
+                                                (most_common_words_df.group == group_name),
+                                                ['words','vals']
+                                                ]
+                sns.barplot(ax=axes[i], x=data.words, y=data.vals)
+                axes[i].set_title(f'Condition: {group_name}, Day: {num_day}')
+
+    return most_common_words_df
