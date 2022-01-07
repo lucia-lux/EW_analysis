@@ -1,0 +1,73 @@
+
+P value (word_count) is 0.00972972280113964.
+
+Conditions differ significantly on word_count.
+
+Posthoc (word_count) is:
+          1         2         3
+1  1.000000  0.283874  0.007122
+2  0.283874  1.000000  0.523870
+3  0.007122  0.523870  1.000000.
+
+The key is 1 = CTR, 2 = EW, 3 = EWRE
+
+P value (word_count_raw) is 0.0029349359121382448.
+
+Conditions differ significantly on word_count_raw.
+
+Posthoc (word_count_raw) is:
+          1         2         3
+1  1.000000  0.083669  0.002315
+2  0.083669  1.000000  0.748153
+3  0.002315  0.748153  1.000000.
+
+The key is 1 = CTR, 2 = EW, 3 = EWRE
+
+P value (polarity) is 0.03688590519079081.
+
+Conditions differ significantly on polarity.
+
+Posthoc (polarity) is:
+          1        2         3
+1  1.000000  1.00000  0.124654
+2  1.000000  1.00000  0.053490
+3  0.124654  0.05349  1.000000.
+
+The key is 1 = CTR, 2 = EW, 3 = EWRE
+
+P value (subjectivity) is 1.3978564535849075e-31.
+
+Conditions differ significantly on subjectivity.
+
+Posthoc (subjectivity) is:
+              1             2             3
+1  1.000000e+00  1.510864e-25  1.931276e-23
+2  1.510864e-25  1.000000e+00  1.000000e+00
+3  1.931276e-23  1.000000e+00  1.000000e+00.
+
+The key is 1 = CTR, 2 = EW, 3 = EWRE
+
+GEE analysis results:
+                               Results: GEE
+===========================================================================
+Model:                  GEE                  AIC:                -720.9234 
+Link Function:          identity             BIC:                -1804.5687
+Dependent Variable:     polarity             Log-Likelihood:     368.46    
+Date:                   2022-01-07 15:45     LL-Null:            361.83    
+No. Observations:       321                  Deviance:           1.8924    
+Df Model:               7                    Pearson chi2:       1.89      
+Df Residuals:           313                  Scale:              0.0060460 
+Method:                 IRLS                                               
+---------------------------------------------------------------------------
+                              Coef.  Std.Err.    z    P>|z|   [0.025 0.975]
+---------------------------------------------------------------------------
+Intercept                     0.0400   0.0102  3.9338 0.0001  0.0201 0.0600
+C(day)[T.2]                   0.0060   0.0156  0.3843 0.7008 -0.0245 0.0365
+C(day)[T.3]                  -0.0038   0.0165 -0.2295 0.8184 -0.0361 0.0286
+C(day)[T.4]                  -0.0058   0.0156 -0.3705 0.7110 -0.0363 0.0247
+C(Group)[T.EWRE]              0.0006   0.0140  0.0402 0.9679 -0.0269 0.0280
+C(day)[T.2]:C(Group)[T.EWRE]  0.0087   0.0214  0.4072 0.6839 -0.0333 0.0508
+C(day)[T.3]:C(Group)[T.EWRE]  0.0307   0.0212  1.4484 0.1475 -0.0108 0.0723
+C(day)[T.4]:C(Group)[T.EWRE]  0.0471   0.0223  2.1109 0.0348  0.0034 0.0908
+===========================================================================
+
