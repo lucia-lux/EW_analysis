@@ -6,34 +6,42 @@ Model:                                 GEE   No. clusters:                      
 Method:                        Generalized   Min. cluster size:                   2
                       Estimating Equations   Max. cluster size:                   4
 Family:                            Tweedie   Mean cluster size:                 3.9
-Dependence structure:       Autoregressive   Num. iterations:                    10
-Date:                     Mon, 27 Dec 2021   Scale:                           5.269
-Covariance type:                    robust   Time:                         18:12:54
-===============================================================================================================================================
-                                                                                  coef    std err          z      P>|z|      [0.025      0.975]
------------------------------------------------------------------------------------------------------------------------------------------------
-Intercept                                                                       2.6718      0.098     27.273      0.000       2.480       2.864
-C(time)[T.2.0]                                                                  0.0963      0.092      1.049      0.294      -0.084       0.276
-C(time)[T.4.0]                                                                 -0.0106      0.113     -0.095      0.925      -0.231       0.210
-C(time)[T.12.0]                                                                 0.2047      0.108      1.895      0.058      -0.007       0.416
-C(Group_act_v_ctr, Treatment('CTR'))[T.EW]                                      0.0647      0.114      0.569      0.569      -0.158       0.288
-C(time)[T.2.0]:C(Group_act_v_ctr, Treatment('CTR'))[T.EW]                      -0.0442      0.111     -0.400      0.689      -0.261       0.172
-C(time)[T.4.0]:C(Group_act_v_ctr, Treatment('CTR'))[T.EW]                      -0.0068      0.129     -0.053      0.958      -0.260       0.246
-C(time)[T.12.0]:C(Group_act_v_ctr, Treatment('CTR'))[T.EW]                     -0.3783      0.132     -2.877      0.004      -0.636      -0.121
-ERQ_reapp_scaled                                                               -0.1687      0.095     -1.766      0.077      -0.356       0.018
-C(time)[T.2.0]:ERQ_reapp_scaled                                                 0.0727      0.093      0.781      0.435      -0.110       0.255
-C(time)[T.4.0]:ERQ_reapp_scaled                                                 0.0336      0.115      0.292      0.770      -0.192       0.259
-C(time)[T.12.0]:ERQ_reapp_scaled                                                0.2339      0.117      1.998      0.046       0.004       0.463
-C(Group_act_v_ctr, Treatment('CTR'))[T.EW]:ERQ_reapp_scaled                     0.0935      0.110      0.848      0.396      -0.123       0.310
-C(time)[T.2.0]:C(Group_act_v_ctr, Treatment('CTR'))[T.EW]:ERQ_reapp_scaled      0.0190      0.106      0.179      0.858      -0.189       0.227
-C(time)[T.4.0]:C(Group_act_v_ctr, Treatment('CTR'))[T.EW]:ERQ_reapp_scaled      0.0054      0.129      0.042      0.967      -0.248       0.259
-C(time)[T.12.0]:C(Group_act_v_ctr, Treatment('CTR'))[T.EW]:ERQ_reapp_scaled    -0.2452      0.147     -1.673      0.094      -0.532       0.042
+Dependence structure:       Autoregressive   Num. iterations:                    12
+Date:                     Tue, 11 Jan 2022   Scale:                           5.292
+Covariance type:                    robust   Time:                         14:21:59
+=======================================================================================================================================
+                                                                          coef    std err          z      P>|z|      [0.025      0.975]
+---------------------------------------------------------------------------------------------------------------------------------------
+Intercept                                                               2.6718      0.098     27.270      0.000       2.480       2.864
+C(time)[T.2.0]                                                          0.0963      0.092      1.049      0.294      -0.084       0.276
+C(time)[T.4.0]                                                         -0.0106      0.113     -0.094      0.925      -0.231       0.210
+C(time)[T.12.0]                                                         0.2048      0.108      1.895      0.058      -0.007       0.417
+C(Group, Treatment('CTR'))[T.EW]                                       -0.0465      0.134     -0.347      0.728      -0.309       0.216
+C(Group, Treatment('CTR'))[T.EWRE]                                      0.1530      0.122      1.253      0.210      -0.086       0.392
+C(time)[T.2.0]:C(Group, Treatment('CTR'))[T.EW]                        -0.0015      0.131     -0.011      0.991      -0.257       0.254
+C(time)[T.4.0]:C(Group, Treatment('CTR'))[T.EW]                         0.0458      0.153      0.299      0.765      -0.254       0.346
+C(time)[T.12.0]:C(Group, Treatment('CTR'))[T.EW]                       -0.3095      0.149     -2.081      0.037      -0.601      -0.018
+C(time)[T.2.0]:C(Group, Treatment('CTR'))[T.EWRE]                      -0.0795      0.122     -0.652      0.515      -0.318       0.159
+C(time)[T.4.0]:C(Group, Treatment('CTR'))[T.EWRE]                      -0.0636      0.139     -0.459      0.646      -0.335       0.208
+C(time)[T.12.0]:C(Group, Treatment('CTR'))[T.EWRE]                     -0.4611      0.150     -3.067      0.002      -0.756      -0.166
+ERQ_reapp_scaled                                                       -0.1686      0.096     -1.765      0.077      -0.356       0.019
+C(time)[T.2.0]:ERQ_reapp_scaled                                         0.0727      0.093      0.780      0.435      -0.110       0.255
+C(time)[T.4.0]:ERQ_reapp_scaled                                         0.0336      0.115      0.292      0.770      -0.192       0.259
+C(time)[T.12.0]:ERQ_reapp_scaled                                        0.2339      0.117      1.998      0.046       0.004       0.463
+C(Group, Treatment('CTR'))[T.EW]:ERQ_reapp_scaled                       0.0538      0.115      0.466      0.641      -0.173       0.280
+C(Group, Treatment('CTR'))[T.EWRE]:ERQ_reapp_scaled                     0.1379      0.127      1.085      0.278      -0.111       0.387
+C(time)[T.2.0]:C(Group, Treatment('CTR'))[T.EW]:ERQ_reapp_scaled       -0.0568      0.117     -0.486      0.627      -0.286       0.172
+C(time)[T.4.0]:C(Group, Treatment('CTR'))[T.EW]:ERQ_reapp_scaled       -0.0286      0.138     -0.207      0.836      -0.299       0.242
+C(time)[T.12.0]:C(Group, Treatment('CTR'))[T.EW]:ERQ_reapp_scaled      -0.2903      0.159     -1.829      0.067      -0.601       0.021
+C(time)[T.2.0]:C(Group, Treatment('CTR'))[T.EWRE]:ERQ_reapp_scaled      0.0794      0.119      0.667      0.505      -0.154       0.313
+C(time)[T.4.0]:C(Group, Treatment('CTR'))[T.EWRE]:ERQ_reapp_scaled      0.0432      0.145      0.299      0.765      -0.241       0.327
+C(time)[T.12.0]:C(Group, Treatment('CTR'))[T.EWRE]:ERQ_reapp_scaled    -0.1854      0.175     -1.058      0.290      -0.529       0.158
 ==============================================================================
-Skew:                          0.5311   Kurtosis:                      -0.1198
-Centered skew:                 0.1887   Centered kurtosis:              1.0461
+Skew:                          0.5089   Kurtosis:                      -0.1060
+Centered skew:                 0.2302   Centered kurtosis:              0.9442
 ==============================================================================
 dass_stress:
   dependency type          QIC        QICu
-0    Independence  1005.877028  524.067370
-1    Exchangeable   890.706564  524.306104
-2  Autoregressive   926.208428  526.212084
+0    Independence  1207.122979  533.685396
+1    Exchangeable  1052.736619  533.004038
+2  Autoregressive  1086.275915  534.418501

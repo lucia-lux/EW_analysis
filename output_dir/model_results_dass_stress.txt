@@ -7,25 +7,29 @@ Method:                        Generalized   Min. cluster size:                 
                       Estimating Equations   Max. cluster size:                   4
 Family:                            Tweedie   Mean cluster size:                 3.9
 Dependence structure:       Autoregressive   Num. iterations:                     9
-Date:                     Mon, 27 Dec 2021   Scale:                           5.359
-Covariance type:                    robust   Time:                         18:12:52
-==============================================================================================================================
-                                                                 coef    std err          z      P>|z|      [0.025      0.975]
-------------------------------------------------------------------------------------------------------------------------------
-Intercept                                                      2.7172      0.104     26.150      0.000       2.514       2.921
-C(time)[T.2.0]                                                 0.0793      0.099      0.800      0.424      -0.115       0.274
-C(time)[T.4.0]                                                -0.0115      0.100     -0.114      0.909      -0.208       0.185
-C(time)[T.12.0]                                                0.1703      0.103      1.659      0.097      -0.031       0.371
-C(Group_act_v_ctr, Treatment('CTR'))[T.EW]                     0.0213      0.119      0.179      0.858      -0.212       0.255
-C(time)[T.2.0]:C(Group_act_v_ctr, Treatment('CTR'))[T.EW]     -0.0318      0.116     -0.273      0.785      -0.260       0.196
-C(time)[T.4.0]:C(Group_act_v_ctr, Treatment('CTR'))[T.EW]     -0.0064      0.118     -0.054      0.957      -0.239       0.226
-C(time)[T.12.0]:C(Group_act_v_ctr, Treatment('CTR'))[T.EW]    -0.3487      0.126     -2.767      0.006      -0.596      -0.102
+Date:                     Tue, 11 Jan 2022   Scale:                           5.418
+Covariance type:                    robust   Time:                         14:21:58
+======================================================================================================================
+                                                         coef    std err          z      P>|z|      [0.025      0.975]
+----------------------------------------------------------------------------------------------------------------------
+Intercept                                              2.7171      0.104     26.144      0.000       2.513       2.921
+C(time)[T.2.0]                                         0.0794      0.099      0.801      0.423      -0.115       0.274
+C(time)[T.4.0]                                        -0.0114      0.100     -0.113      0.910      -0.208       0.185
+C(time)[T.12.0]                                        0.1704      0.103      1.660      0.097      -0.031       0.372
+C(Group, Treatment('CTR'))[T.EW]                      -0.0951      0.140     -0.679      0.497      -0.370       0.180
+C(Group, Treatment('CTR'))[T.EWRE]                     0.1226      0.125      0.978      0.328      -0.123       0.368
+C(time)[T.2.0]:C(Group, Treatment('CTR'))[T.EW]        0.0148      0.136      0.109      0.913      -0.251       0.281
+C(time)[T.4.0]:C(Group, Treatment('CTR'))[T.EW]        0.0663      0.143      0.464      0.643      -0.214       0.347
+C(time)[T.12.0]:C(Group, Treatment('CTR'))[T.EW]      -0.2544      0.149     -1.712      0.087      -0.546       0.037
+C(time)[T.2.0]:C(Group, Treatment('CTR'))[T.EWRE]     -0.0703      0.127     -0.555      0.579      -0.319       0.178
+C(time)[T.4.0]:C(Group, Treatment('CTR'))[T.EWRE]     -0.0671      0.127     -0.527      0.598      -0.316       0.182
+C(time)[T.12.0]:C(Group, Treatment('CTR'))[T.EWRE]    -0.4272      0.141     -3.027      0.002      -0.704      -0.151
 ==============================================================================
-Skew:                          0.5289   Kurtosis:                      -0.1053
-Centered skew:                 0.2580   Centered kurtosis:              0.9124
+Skew:                          0.5625   Kurtosis:                      -0.0291
+Centered skew:                 0.2782   Centered kurtosis:              0.8148
 ==============================================================================
 dass_stress:
   dependency type         QIC        QICu
-0    Independence  752.072918  517.439691
-1    Exchangeable  749.713167  518.019640
-2  Autoregressive  762.070905  519.805603
+0    Independence  849.858976  518.450438
+1    Exchangeable  846.977300  518.984706
+2  Autoregressive  859.711131  519.653707
