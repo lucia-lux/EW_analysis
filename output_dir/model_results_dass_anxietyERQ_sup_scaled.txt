@@ -7,8 +7,8 @@ Method:                        Generalized   Min. cluster size:                 
                       Estimating Equations   Max. cluster size:                   4
 Family:                            Tweedie   Mean cluster size:                 3.9
 Dependence structure:       Autoregressive   Num. iterations:                    13
-Date:                     Tue, 11 Jan 2022   Scale:                           7.557
-Covariance type:                    robust   Time:                         14:21:51
+Date:                     Mon, 17 Jan 2022   Scale:                           7.557
+Covariance type:                    robust   Time:                         16:29:39
 =====================================================================================================================================
                                                                         coef    std err          z      P>|z|      [0.025      0.975]
 -------------------------------------------------------------------------------------------------------------------------------------

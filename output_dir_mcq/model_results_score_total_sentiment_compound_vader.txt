@@ -1,0 +1,31 @@
+score_total:
+                                     Mixed Linear Model Regression Results
+================================================================================================================
+Model:                               MixedLM                   Dependent Variable:                   score_total
+No. Observations:                    321                       Method:                               REML       
+No. Groups:                          82                        Scale:                                115.2868   
+Min. group size:                     1                         Log-Likelihood:                       -1249.8681 
+Max. group size:                     4                         Converged:                            Yes        
+Mean group size:                     3.9                                                                        
+----------------------------------------------------------------------------------------------------------------
+                                                                     Coef.  Std.Err.   z    P>|z|  [0.025 0.975]
+----------------------------------------------------------------------------------------------------------------
+Intercept                                                            63.120    2.504 25.204 0.000  58.211 68.028
+C(day, Treatment(1))[T.2]                                            -0.908    2.638 -0.344 0.731  -6.079  4.262
+C(day, Treatment(1))[T.3]                                            -3.422    2.526 -1.355 0.176  -8.373  1.530
+C(day, Treatment(1))[T.4]                                            -3.541    2.494 -1.420 0.156  -8.430  1.347
+C(Group)[T.EWRE]                                                      0.831    3.694  0.225 0.822  -6.410  8.071
+C(day, Treatment(1))[T.2]:C(Group)[T.EWRE]                           -0.447    3.776 -0.118 0.906  -7.849  6.955
+C(day, Treatment(1))[T.3]:C(Group)[T.EWRE]                           -0.966    3.727 -0.259 0.795  -8.272  6.339
+C(day, Treatment(1))[T.4]:C(Group)[T.EWRE]                            0.666    3.722  0.179 0.858  -6.630  7.962
+sentiment_compound_vader                                             -1.784    2.161 -0.825 0.409  -6.020  2.452
+C(day, Treatment(1))[T.2]:sentiment_compound_vader                    2.935    3.151  0.931 0.352  -3.241  9.111
+C(day, Treatment(1))[T.3]:sentiment_compound_vader                    1.574    3.075  0.512 0.609  -4.453  7.602
+C(day, Treatment(1))[T.4]:sentiment_compound_vader                    4.095    3.015  1.358 0.174  -1.814 10.004
+C(Group)[T.EWRE]:sentiment_compound_vader                             2.304    3.233  0.713 0.476  -4.032  8.641
+C(day, Treatment(1))[T.2]:C(Group)[T.EWRE]:sentiment_compound_vader  -4.337    4.468 -0.971 0.332 -13.095  4.420
+C(day, Treatment(1))[T.3]:C(Group)[T.EWRE]:sentiment_compound_vader  -4.750    4.436 -1.071 0.284 -13.444  3.944
+C(day, Treatment(1))[T.4]:C(Group)[T.EWRE]:sentiment_compound_vader  -8.037    4.458 -1.803 0.071 -16.775  0.701
+id Var                                                              124.375    2.648                            
+================================================================================================================
+

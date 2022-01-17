@@ -1,0 +1,31 @@
+memory_time_vague_clear:
+                                   Mixed Linear Model Regression Results
+===========================================================================================================
+Model:                          MixedLM             Dependent Variable:             memory_time_vague_clear
+No. Observations:               303                 Method:                         REML                   
+No. Groups:                     82                  Scale:                          1.2498                 
+Min. group size:                1                   Log-Likelihood:                 -498.2666              
+Max. group size:                4                   Converged:                      Yes                    
+Mean group size:                3.7                                                                        
+-----------------------------------------------------------------------------------------------------------
+                                                                Coef.  Std.Err.   z    P>|z|  [0.025 0.975]
+-----------------------------------------------------------------------------------------------------------
+Intercept                                                        4.884    0.669  7.305 0.000   3.574  6.194
+C(day, Treatment(1))[T.2]                                        0.276    0.897  0.307 0.759  -1.482  2.034
+C(day, Treatment(1))[T.3]                                       -0.400    0.859 -0.466 0.641  -2.084  1.283
+C(day, Treatment(1))[T.4]                                        0.805    0.856  0.940 0.347  -0.873  2.483
+C(Group)[T.EWRE]                                                 1.491    0.998  1.494 0.135  -0.465  3.447
+C(day, Treatment(1))[T.2]:C(Group)[T.EWRE]                      -1.054    1.316 -0.801 0.423  -3.634  1.526
+C(day, Treatment(1))[T.3]:C(Group)[T.EWRE]                      -0.037    1.258 -0.030 0.976  -2.503  2.429
+C(day, Treatment(1))[T.4]:C(Group)[T.EWRE]                      -0.589    1.259 -0.468 0.640  -3.057  1.878
+sentiment_neg_vader                                              5.436    5.016  1.084 0.278  -4.395 15.267
+C(day, Treatment(1))[T.2]:sentiment_neg_vader                   -3.394    7.048 -0.482 0.630 -17.208 10.420
+C(day, Treatment(1))[T.3]:sentiment_neg_vader                    0.777    6.672  0.117 0.907 -12.299 13.853
+C(day, Treatment(1))[T.4]:sentiment_neg_vader                   -6.185    6.747 -0.917 0.359 -19.409  7.038
+C(Group)[T.EWRE]:sentiment_neg_vader                           -11.920    7.174 -1.662 0.097 -25.980  2.141
+C(day, Treatment(1))[T.2]:C(Group)[T.EWRE]:sentiment_neg_vader   7.089    9.980  0.710 0.478 -12.472 26.650
+C(day, Treatment(1))[T.3]:C(Group)[T.EWRE]:sentiment_neg_vader   0.902    9.573  0.094 0.925 -17.861 19.665
+C(day, Treatment(1))[T.4]:C(Group)[T.EWRE]:sentiment_neg_vader   1.255    9.857  0.127 0.899 -18.063 20.574
+id Var                                                           1.078    0.244                            
+===========================================================================================================
+
