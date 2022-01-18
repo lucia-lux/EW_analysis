@@ -1,0 +1,31 @@
+score_sensory:
+                                     Mixed Linear Model Regression Results
+================================================================================================================
+Model:                               MixedLM                  Dependent Variable:                  score_sensory
+No. Observations:                    321                      Method:                              REML         
+No. Groups:                          82                       Scale:                               14.4464      
+Min. group size:                     1                        Log-Likelihood:                      -942.6585    
+Max. group size:                     4                        Converged:                           Yes          
+Mean group size:                     3.9                                                                        
+----------------------------------------------------------------------------------------------------------------
+                                                                      Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+----------------------------------------------------------------------------------------------------------------
+Intercept                                                              8.437    1.083  7.793 0.000  6.315 10.559
+C(day, Treatment(1))[T.2]                                              0.751    1.035  0.726 0.468 -1.277  2.779
+C(day, Treatment(1))[T.3]                                             -0.564    1.029 -0.548 0.584 -2.579  1.452
+C(day, Treatment(1))[T.4]                                              0.370    1.006  0.368 0.713 -1.602  2.343
+C(Group)[T.EWRE]                                                       1.356    1.613  0.841 0.400 -1.805  4.518
+C(day, Treatment(1))[T.2]:C(Group)[T.EWRE]                            -1.291    1.570 -0.822 0.411 -4.369  1.787
+C(day, Treatment(1))[T.3]:C(Group)[T.EWRE]                            -0.564    1.522 -0.370 0.711 -3.547  2.420
+C(day, Treatment(1))[T.4]:C(Group)[T.EWRE]                            -1.945    1.490 -1.306 0.192 -4.865  0.975
+sentiment_neg_vader_scaled                                             1.702    1.697  1.003 0.316 -1.624  5.028
+C(day, Treatment(1))[T.2]:sentiment_neg_vader_scaled                  -3.571    2.284 -1.564 0.118 -8.046  0.905
+C(day, Treatment(1))[T.3]:sentiment_neg_vader_scaled                  -0.199    2.199 -0.090 0.928 -4.508  4.111
+C(day, Treatment(1))[T.4]:sentiment_neg_vader_scaled                  -0.229    2.190 -0.105 0.917 -4.521  4.063
+C(Group)[T.EWRE]:sentiment_neg_vader_scaled                           -3.990    2.415 -1.652 0.099 -8.724  0.744
+C(day, Treatment(1))[T.2]:C(Group)[T.EWRE]:sentiment_neg_vader_scaled  4.494    3.285  1.368 0.171 -1.944 10.931
+C(day, Treatment(1))[T.3]:C(Group)[T.EWRE]:sentiment_neg_vader_scaled  5.088    3.152  1.614 0.107 -1.091 11.266
+C(day, Treatment(1))[T.4]:C(Group)[T.EWRE]:sentiment_neg_vader_scaled  6.643    3.231  2.056 0.040  0.311 12.974
+id Var                                                                24.773    1.380                           
+================================================================================================================
+
