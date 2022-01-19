@@ -1,0 +1,47 @@
+dass_anxiety:
+                               GEE Regression Results                              
+===================================================================================
+Dep. Variable:                dass_anxiety   No. Observations:                  469
+Model:                                 GEE   No. clusters:                      119
+Method:                        Generalized   Min. cluster size:                   2
+                      Estimating Equations   Max. cluster size:                   4
+Family:                            Tweedie   Mean cluster size:                 3.9
+Dependence structure:       Autoregressive   Num. iterations:                    10
+Date:                     Tue, 18 Jan 2022   Scale:                           7.339
+Covariance type:                    robust   Time:                         13:41:12
+======================================================================================================================================================
+                                                                                         coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Intercept                                                                              2.3311      0.157     14.878      0.000       2.024       2.638
+C(time)[T.2.0]                                                                         0.0569      0.101      0.566      0.572      -0.140       0.254
+C(time)[T.4.0]                                                                        -0.0134      0.130     -0.103      0.918      -0.268       0.242
+C(time)[T.12.0]                                                                        0.0980      0.109      0.901      0.368      -0.115       0.311
+C(Group, Treatment('CTR'))[T.EW]                                                      -0.6614      0.244     -2.708      0.007      -1.140      -0.183
+C(Group, Treatment('CTR'))[T.EWRE]                                                    -0.2583      0.194     -1.331      0.183      -0.639       0.122
+C(time)[T.2.0]:C(Group, Treatment('CTR'))[T.EW]                                        0.2408      0.165      1.457      0.145      -0.083       0.565
+C(time)[T.4.0]:C(Group, Treatment('CTR'))[T.EW]                                        0.3733      0.236      1.581      0.114      -0.090       0.836
+C(time)[T.12.0]:C(Group, Treatment('CTR'))[T.EW]                                       0.3188      0.197      1.619      0.105      -0.067       0.705
+C(time)[T.2.0]:C(Group, Treatment('CTR'))[T.EWRE]                                      0.0545      0.145      0.377      0.706      -0.229       0.338
+C(time)[T.4.0]:C(Group, Treatment('CTR'))[T.EWRE]                                      0.1290      0.208      0.620      0.535      -0.279       0.537
+C(time)[T.12.0]:C(Group, Treatment('CTR'))[T.EWRE]                                    -0.2143      0.185     -1.161      0.246      -0.576       0.148
+sentiment_compound_vader_scaled                                                       -1.2402      0.512     -2.421      0.015      -2.244      -0.236
+C(time)[T.2.0]:sentiment_compound_vader_scaled                                        -0.1779      0.327     -0.545      0.586      -0.818       0.462
+C(time)[T.4.0]:sentiment_compound_vader_scaled                                         0.1789      0.377      0.475      0.635      -0.560       0.918
+C(time)[T.12.0]:sentiment_compound_vader_scaled                                        0.1215      0.276      0.440      0.660      -0.420       0.663
+C(Group, Treatment('CTR'))[T.EW]:sentiment_compound_vader_scaled                       0.8019      0.644      1.245      0.213      -0.460       2.064
+C(Group, Treatment('CTR'))[T.EWRE]:sentiment_compound_vader_scaled                     1.0617      0.567      1.873      0.061      -0.049       2.172
+C(time)[T.2.0]:C(Group, Treatment('CTR'))[T.EW]:sentiment_compound_vader_scaled        0.7079      0.395      1.791      0.073      -0.067       1.483
+C(time)[T.4.0]:C(Group, Treatment('CTR'))[T.EW]:sentiment_compound_vader_scaled        0.8649      0.526      1.645      0.100      -0.165       1.895
+C(time)[T.12.0]:C(Group, Treatment('CTR'))[T.EW]:sentiment_compound_vader_scaled       0.5190      0.396      1.311      0.190      -0.257       1.295
+C(time)[T.2.0]:C(Group, Treatment('CTR'))[T.EWRE]:sentiment_compound_vader_scaled      0.1760      0.409      0.431      0.667      -0.625       0.977
+C(time)[T.4.0]:C(Group, Treatment('CTR'))[T.EWRE]:sentiment_compound_vader_scaled     -0.1849      0.496     -0.373      0.709      -1.157       0.787
+C(time)[T.12.0]:C(Group, Treatment('CTR'))[T.EWRE]:sentiment_compound_vader_scaled     0.3202      0.461      0.695      0.487      -0.583       1.223
+==============================================================================
+Skew:                          1.4314   Kurtosis:                       2.3263
+Centered skew:                 0.0324   Centered kurtosis:              2.1832
+==============================================================================
+dass_anxiety:
+  dependency type         QIC        QICu
+0    Independence  810.189669  461.859229
+1    Exchangeable  802.424360  460.700387
+2  Autoregressive  806.625937  460.581150

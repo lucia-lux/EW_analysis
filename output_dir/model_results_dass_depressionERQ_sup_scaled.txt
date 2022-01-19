@@ -6,9 +6,9 @@ Model:                                 GEE   No. clusters:                      
 Method:                        Generalized   Min. cluster size:                   2
                       Estimating Equations   Max. cluster size:                   4
 Family:                            Tweedie   Mean cluster size:                 3.9
-Dependence structure:       Autoregressive   Num. iterations:                    11
-Date:                     Mon, 17 Jan 2022   Scale:                           7.134
-Covariance type:                    robust   Time:                         16:29:44
+Dependence structure:       Autoregressive   Num. iterations:                    12
+Date:                     Tue, 18 Jan 2022   Scale:                           7.134
+Covariance type:                    robust   Time:                         13:41:19
 =====================================================================================================================================
                                                                         coef    std err          z      P>|z|      [0.025      0.975]
 -------------------------------------------------------------------------------------------------------------------------------------

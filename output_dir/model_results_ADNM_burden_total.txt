@@ -1,35 +1,35 @@
 ADNM_burden_total:
                                GEE Regression Results                              
 ===================================================================================
-Dep. Variable:           ADNM_burden_total   No. Observations:                  466
+Dep. Variable:           ADNM_burden_total   No. Observations:                  465
 Model:                                 GEE   No. clusters:                      119
 Method:                        Generalized   Min. cluster size:                   2
                       Estimating Equations   Max. cluster size:                   4
 Family:                            Tweedie   Mean cluster size:                 3.9
-Dependence structure:       Autoregressive   Num. iterations:                    12
-Date:                     Mon, 17 Jan 2022   Scale:                           3.995
-Covariance type:                    robust   Time:                         16:29:31
+Dependence structure:       Autoregressive   Num. iterations:                    11
+Date:                     Tue, 18 Jan 2022   Scale:                           3.992
+Covariance type:                    robust   Time:                         13:40:39
 ======================================================================================================================
                                                          coef    std err          z      P>|z|      [0.025      0.975]
 ----------------------------------------------------------------------------------------------------------------------
-Intercept                                              3.9695      0.032    123.400      0.000       3.906       4.033
-C(time)[T.2.0]                                        -0.0370      0.037     -0.996      0.319      -0.110       0.036
-C(time)[T.4.0]                                        -0.0624      0.045     -1.374      0.170      -0.151       0.027
-C(time)[T.12.0]                                       -0.0918      0.058     -1.580      0.114      -0.206       0.022
-C(Group, Treatment('CTR'))[T.EW]                      -0.0027      0.042     -0.064      0.949      -0.085       0.080
-C(Group, Treatment('CTR'))[T.EWRE]                    -0.0069      0.043     -0.160      0.873      -0.091       0.077
-C(time)[T.2.0]:C(Group, Treatment('CTR'))[T.EW]        0.0274      0.052      0.527      0.598      -0.075       0.129
-C(time)[T.4.0]:C(Group, Treatment('CTR'))[T.EW]       -0.0874      0.073     -1.193      0.233      -0.231       0.056
-C(time)[T.12.0]:C(Group, Treatment('CTR'))[T.EW]      -0.0944      0.087     -1.079      0.280      -0.266       0.077
-C(time)[T.2.0]:C(Group, Treatment('CTR'))[T.EWRE]      0.0147      0.051      0.289      0.772      -0.085       0.115
-C(time)[T.4.0]:C(Group, Treatment('CTR'))[T.EWRE]      0.0291      0.057      0.514      0.607      -0.082       0.140
-C(time)[T.12.0]:C(Group, Treatment('CTR'))[T.EWRE]     0.0080      0.076      0.106      0.916      -0.140       0.156
+Intercept                                              3.9690      0.032    123.275      0.000       3.906       4.032
+C(time)[T.2.0]                                        -0.0339      0.037     -0.922      0.357      -0.106       0.038
+C(time)[T.4.0]                                        -0.0618      0.045     -1.365      0.172      -0.150       0.027
+C(time)[T.12.0]                                       -0.1028      0.059     -1.740      0.082      -0.219       0.013
+C(Group, Treatment('CTR'))[T.EW]                      -0.0021      0.042     -0.051      0.959      -0.085       0.080
+C(Group, Treatment('CTR'))[T.EWRE]                    -0.0064      0.043     -0.151      0.880      -0.090       0.077
+C(time)[T.2.0]:C(Group, Treatment('CTR'))[T.EW]        0.0244      0.052      0.470      0.638      -0.077       0.126
+C(time)[T.4.0]:C(Group, Treatment('CTR'))[T.EW]       -0.0880      0.073     -1.203      0.229      -0.231       0.055
+C(time)[T.12.0]:C(Group, Treatment('CTR'))[T.EW]      -0.0834      0.088     -0.947      0.344      -0.256       0.089
+C(time)[T.2.0]:C(Group, Treatment('CTR'))[T.EWRE]      0.0117      0.051      0.231      0.817      -0.088       0.111
+C(time)[T.4.0]:C(Group, Treatment('CTR'))[T.EWRE]      0.0286      0.056      0.506      0.613      -0.082       0.139
+C(time)[T.12.0]:C(Group, Treatment('CTR'))[T.EWRE]     0.0191      0.076      0.250      0.802      -0.131       0.169
 ==============================================================================
-Skew:                         -0.8633   Kurtosis:                       1.5539
-Centered skew:                -1.1151   Centered kurtosis:              5.8976
+Skew:                         -0.8575   Kurtosis:                       1.5441
+Centered skew:                -1.1272   Centered kurtosis:              5.9802
 ==============================================================================
 ADNM_burden_total:
   dependency type          QIC        QICu
-0    Independence  1735.964203  617.609802
-1    Exchangeable  1725.798158  618.313632
-2  Autoregressive  1776.135477  617.570451
+0    Independence  1734.613607  616.199259
+1    Exchangeable  1722.222614  616.918178
+2  Autoregressive  1772.402835  616.261451

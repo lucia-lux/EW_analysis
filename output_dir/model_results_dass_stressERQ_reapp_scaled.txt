@@ -7,8 +7,8 @@ Method:                        Generalized   Min. cluster size:                 
                       Estimating Equations   Max. cluster size:                   4
 Family:                            Tweedie   Mean cluster size:                 3.9
 Dependence structure:       Autoregressive   Num. iterations:                    12
-Date:                     Mon, 17 Jan 2022   Scale:                           5.292
-Covariance type:                    robust   Time:                         16:29:47
+Date:                     Tue, 18 Jan 2022   Scale:                           5.292
+Covariance type:                    robust   Time:                         13:41:33
 =======================================================================================================================================
                                                                           coef    std err          z      P>|z|      [0.025      0.975]
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -44,4 +44,4 @@ dass_stress:
   dependency type          QIC        QICu
 0    Independence  1207.122979  533.685396
 1    Exchangeable  1052.736619  533.004038
-2  Autoregressive  1086.275915  534.418501
+2  Autoregressive  1086.275913  534.418501

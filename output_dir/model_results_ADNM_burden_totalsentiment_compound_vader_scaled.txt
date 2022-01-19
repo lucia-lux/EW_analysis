@@ -1,0 +1,47 @@
+ADNM_burden_total:
+                               GEE Regression Results                              
+===================================================================================
+Dep. Variable:           ADNM_burden_total   No. Observations:                  465
+Model:                                 GEE   No. clusters:                      119
+Method:                        Generalized   Min. cluster size:                   2
+                      Estimating Equations   Max. cluster size:                   4
+Family:                            Tweedie   Mean cluster size:                 3.9
+Dependence structure:       Autoregressive   Num. iterations:                    12
+Date:                     Tue, 18 Jan 2022   Scale:                           4.004
+Covariance type:                    robust   Time:                         13:40:53
+======================================================================================================================================================
+                                                                                         coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------------------------------------------------
+Intercept                                                                              4.0210      0.039    102.358      0.000       3.944       4.098
+C(time)[T.2.0]                                                                        -0.0281      0.040     -0.697      0.486      -0.107       0.051
+C(time)[T.4.0]                                                                        -0.0663      0.046     -1.444      0.149      -0.156       0.024
+C(time)[T.12.0]                                                                       -0.1398      0.074     -1.884      0.060      -0.285       0.006
+C(Group, Treatment('CTR'))[T.EW]                                                      -0.0385      0.047     -0.820      0.412      -0.130       0.053
+C(Group, Treatment('CTR'))[T.EWRE]                                                    -0.0695      0.047     -1.481      0.139      -0.161       0.022
+C(time)[T.2.0]:C(Group, Treatment('CTR'))[T.EW]                                       -0.0164      0.058     -0.282      0.778      -0.130       0.097
+C(time)[T.4.0]:C(Group, Treatment('CTR'))[T.EW]                                       -0.1422      0.091     -1.555      0.120      -0.321       0.037
+C(time)[T.12.0]:C(Group, Treatment('CTR'))[T.EW]                                      -0.0319      0.096     -0.334      0.738      -0.219       0.155
+C(time)[T.2.0]:C(Group, Treatment('CTR'))[T.EWRE]                                      0.0124      0.052      0.237      0.813      -0.090       0.115
+C(time)[T.4.0]:C(Group, Treatment('CTR'))[T.EWRE]                                      0.0424      0.056      0.764      0.445      -0.066       0.151
+C(time)[T.12.0]:C(Group, Treatment('CTR'))[T.EWRE]                                     0.0703      0.088      0.803      0.422      -0.101       0.242
+sentiment_compound_vader_scaled                                                       -0.2969      0.123     -2.424      0.015      -0.537      -0.057
+C(time)[T.2.0]:sentiment_compound_vader_scaled                                        -0.0191      0.121     -0.158      0.874      -0.256       0.218
+C(time)[T.4.0]:sentiment_compound_vader_scaled                                         0.0515      0.127      0.406      0.685      -0.197       0.300
+C(time)[T.12.0]:sentiment_compound_vader_scaled                                        0.2106      0.202      1.043      0.297      -0.185       0.606
+C(Group, Treatment('CTR'))[T.EW]:sentiment_compound_vader_scaled                       0.3396      0.136      2.495      0.013       0.073       0.606
+C(Group, Treatment('CTR'))[T.EWRE]:sentiment_compound_vader_scaled                     0.1635      0.137      1.193      0.233      -0.105       0.432
+C(time)[T.2.0]:C(Group, Treatment('CTR'))[T.EW]:sentiment_compound_vader_scaled       -0.0749      0.142     -0.527      0.598      -0.354       0.204
+C(time)[T.4.0]:C(Group, Treatment('CTR'))[T.EW]:sentiment_compound_vader_scaled       -0.2564      0.178     -1.442      0.149      -0.605       0.092
+C(time)[T.12.0]:C(Group, Treatment('CTR'))[T.EW]:sentiment_compound_vader_scaled      -0.0955      0.250     -0.382      0.703      -0.586       0.395
+C(time)[T.2.0]:C(Group, Treatment('CTR'))[T.EWRE]:sentiment_compound_vader_scaled      0.0726      0.146      0.498      0.618      -0.213       0.359
+C(time)[T.4.0]:C(Group, Treatment('CTR'))[T.EWRE]:sentiment_compound_vader_scaled      0.0498      0.148      0.338      0.736      -0.239       0.339
+C(time)[T.12.0]:C(Group, Treatment('CTR'))[T.EWRE]:sentiment_compound_vader_scaled    -0.0393      0.224     -0.175      0.861      -0.479       0.400
+==============================================================================
+Skew:                         -0.8824   Kurtosis:                       1.6093
+Centered skew:                -1.1223   Centered kurtosis:              5.5455
+==============================================================================
+ADNM_burden_total:
+  dependency type          QIC        QICu
+0    Independence  2708.201226  625.192787
+1    Exchangeable  2653.832223  625.919865
+2  Autoregressive  2749.185647  625.024753

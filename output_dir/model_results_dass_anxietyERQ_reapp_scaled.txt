@@ -6,9 +6,9 @@ Model:                                 GEE   No. clusters:                      
 Method:                        Generalized   Min. cluster size:                   2
                       Estimating Equations   Max. cluster size:                   4
 Family:                            Tweedie   Mean cluster size:                 3.9
-Dependence structure:       Autoregressive   Num. iterations:                    20
-Date:                     Mon, 17 Jan 2022   Scale:                           7.754
-Covariance type:                    robust   Time:                         16:29:38
+Dependence structure:       Autoregressive   Num. iterations:                    17
+Date:                     Tue, 18 Jan 2022   Scale:                           7.754
+Covariance type:                    robust   Time:                         13:40:58
 =======================================================================================================================================
                                                                           coef    std err          z      P>|z|      [0.025      0.975]
 ---------------------------------------------------------------------------------------------------------------------------------------
@@ -44,4 +44,4 @@ dass_anxiety:
   dependency type         QIC        QICu
 0    Independence  795.587239  468.819084
 1    Exchangeable  682.109909  462.060372
-2  Autoregressive  684.552066  455.808295
+2  Autoregressive  684.552067  455.808295
