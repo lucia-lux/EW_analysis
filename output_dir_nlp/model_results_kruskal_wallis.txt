@@ -1,9 +1,9 @@
 
-P value (word_count) is 0.00972972280113964.
+P value (word_count_tokenized) is 0.00972972280113964.
 
-Conditions differ significantly on word_count.
+Conditions differ significantly on word_count_tokenized.
 
-Posthoc (word_count) is:
+Posthoc (word_count_tokenized) is:
           1         2         3
 1  1.000000  0.283874  0.007122
 2  0.283874  1.000000  0.523870
