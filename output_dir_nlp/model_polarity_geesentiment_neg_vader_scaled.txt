@@ -4,7 +4,7 @@ sentiment_neg_vader_scaled:
 Model:               GEE                         AIC:             351.3281  
 Link Function:       identity                    BIC:             -1753.0403
 Dependent Variable:  sentiment_neg_vader_scaled  Log-Likelihood:  -167.66   
-Date:                2022-01-18 12:07            LL-Null:         -173.72   
+Date:                2022-01-22 11:53            LL-Null:         -173.72   
 No. Observations:    321                         Deviance:        53.421    
 Df Model:            7                           Pearson chi2:    53.4      
 Df Residuals:        313                         Scale:           0.17067   

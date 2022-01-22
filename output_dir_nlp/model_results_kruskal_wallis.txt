@@ -1,0 +1,24 @@
+
+P value (word_count) is 0.00972972280113964.
+
+Conditions differ significantly on word_count.
+
+Posthoc (word_count) is:
+          1         2         3
+1  1.000000  0.283874  0.007122
+2  0.283874  1.000000  0.523870
+3  0.007122  0.523870  1.000000.
+
+The key is 1 = CTR, 2 = EW, 3 = EWRE
+
+P value (word_count_raw) is 0.0029349359121382448.
+
+Conditions differ significantly on word_count_raw.
+
+Posthoc (word_count_raw) is:
+          1         2         3
+1  1.000000  0.083669  0.002315
+2  0.083669  1.000000  0.748153
+3  0.002315  0.748153  1.000000.
+
+The key is 1 = CTR, 2 = EW, 3 = EWRE
