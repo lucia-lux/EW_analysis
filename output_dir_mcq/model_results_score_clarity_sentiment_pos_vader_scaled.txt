@@ -1,31 +1,34 @@
 score_clarity:
-                                     Mixed Linear Model Regression Results
-================================================================================================================
-Model:                               MixedLM                  Dependent Variable:                  score_clarity
-No. Observations:                    321                      Method:                              REML         
-No. Groups:                          82                       Scale:                               26.6821      
-Min. group size:                     1                        Log-Likelihood:                      -1021.0024   
-Max. group size:                     4                        Converged:                           Yes          
-Mean group size:                     3.9                                                                        
-----------------------------------------------------------------------------------------------------------------
-                                                                      Coef.  Std.Err.   z    P>|z| [0.025 0.975]
-----------------------------------------------------------------------------------------------------------------
-Intercept                                                             34.142    1.194 28.592 0.000 31.801 36.482
-C(day, Treatment(1))[T.2]                                             -0.959    1.231 -0.778 0.436 -3.372  1.455
-C(day, Treatment(1))[T.3]                                             -2.016    1.294 -1.558 0.119 -4.551  0.520
-C(day, Treatment(1))[T.4]                                             -4.299    1.332 -3.227 0.001 -6.911 -1.688
-C(Group)[T.EWRE]                                                      -1.066    1.649 -0.647 0.518 -4.299  2.166
-C(day, Treatment(1))[T.2]:C(Group)[T.EWRE]                             1.464    1.783  0.821 0.412 -2.031  4.959
-C(day, Treatment(1))[T.3]:C(Group)[T.EWRE]                             0.579    1.761  0.329 0.742 -2.872  4.030
-C(day, Treatment(1))[T.4]:C(Group)[T.EWRE]                             3.100    1.971  1.573 0.116 -0.762  6.963
-sentiment_pos_vader_scaled                                             0.531    1.586  0.335 0.738 -2.577  3.639
-C(day, Treatment(1))[T.2]:sentiment_pos_vader_scaled                   0.564    2.185  0.258 0.796 -3.719  4.846
-C(day, Treatment(1))[T.3]:sentiment_pos_vader_scaled                  -0.018    1.970 -0.009 0.993 -3.880  3.844
-C(day, Treatment(1))[T.4]:sentiment_pos_vader_scaled                   1.257    2.169  0.579 0.562 -2.995  5.509
-C(Group)[T.EWRE]:sentiment_pos_vader_scaled                           -0.937    2.269 -0.413 0.680 -5.383  3.510
-C(day, Treatment(1))[T.2]:C(Group)[T.EWRE]:sentiment_pos_vader_scaled -0.147    2.994 -0.049 0.961 -6.016  5.721
-C(day, Treatment(1))[T.3]:C(Group)[T.EWRE]:sentiment_pos_vader_scaled  1.259    2.788  0.452 0.651 -4.205  6.723
-C(day, Treatment(1))[T.4]:C(Group)[T.EWRE]:sentiment_pos_vader_scaled -0.973    2.940 -0.331 0.741 -6.735  4.788
-id Var                                                                25.929    1.176                           
-================================================================================================================
-
+                               GEE Regression Results                              
+===================================================================================
+Dep. Variable:               score_clarity   No. Observations:                  321
+Model:                                 GEE   No. clusters:                       82
+Method:                        Generalized   Min. cluster size:                   1
+                      Estimating Equations   Max. cluster size:                   4
+Family:                           Gaussian   Mean cluster size:                 3.9
+Dependence structure:         Independence   Num. iterations:                     2
+Date:                     Fri, 28 Jan 2022   Scale:                          52.717
+Covariance type:                    robust   Time:                         17:30:21
+=========================================================================================================================================
+                                                                            coef    std err          z      P>|z|      [0.025      0.975]
+-----------------------------------------------------------------------------------------------------------------------------------------
+Intercept                                                                34.3390      0.967     35.526      0.000      32.445      36.234
+C(day, Treatment(1))[T.2]                                                -1.0602      1.215     -0.872      0.383      -3.442       1.322
+C(day, Treatment(1))[T.3]                                                -1.7566      1.486     -1.182      0.237      -4.669       1.156
+C(day, Treatment(1))[T.4]                                                -4.3781      1.613     -2.715      0.007      -7.539      -1.218
+C(Group)[T.EWRE]                                                         -1.3616      1.372     -0.992      0.321      -4.051       1.328
+C(day, Treatment(1))[T.2]:C(Group)[T.EWRE]                                1.6702      1.508      1.107      0.268      -1.286       4.626
+C(day, Treatment(1))[T.3]:C(Group)[T.EWRE]                                0.4596      1.802      0.255      0.799      -3.072       3.991
+C(day, Treatment(1))[T.4]:C(Group)[T.EWRE]                                2.4770      2.237      1.107      0.268      -1.908       6.862
+sentiment_pos_vader_scaled                                               -0.2970      1.366     -0.217      0.828      -2.974       2.380
+C(day, Treatment(1))[T.2]:sentiment_pos_vader_scaled                      1.1540      2.128      0.542      0.588      -3.016       5.324
+C(day, Treatment(1))[T.3]:sentiment_pos_vader_scaled                     -0.6256      1.718     -0.364      0.716      -3.993       2.742
+C(day, Treatment(1))[T.4]:sentiment_pos_vader_scaled                      1.5949      2.556      0.624      0.533      -3.414       6.604
+C(Group)[T.EWRE]:sentiment_pos_vader_scaled                               1.3861      1.762      0.787      0.432      -2.068       4.840
+C(day, Treatment(1))[T.2]:C(Group)[T.EWRE]:sentiment_pos_vader_scaled    -2.2478      2.671     -0.842      0.400      -7.483       2.987
+C(day, Treatment(1))[T.3]:C(Group)[T.EWRE]:sentiment_pos_vader_scaled    -0.2798      2.569     -0.109      0.913      -5.315       4.755
+C(day, Treatment(1))[T.4]:C(Group)[T.EWRE]:sentiment_pos_vader_scaled    -1.8211      3.130     -0.582      0.561      -7.956       4.314
+==============================================================================
+Skew:                         -0.8097   Kurtosis:                       0.4966
+Centered skew:                -0.2451   Centered kurtosis:              1.6153
+==============================================================================

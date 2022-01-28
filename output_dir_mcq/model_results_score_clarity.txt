@@ -1,0 +1,26 @@
+score_clarity:
+                               GEE Regression Results                              
+===================================================================================
+Dep. Variable:               score_clarity   No. Observations:                  321
+Model:                                 GEE   No. clusters:                       82
+Method:                        Generalized   Min. cluster size:                   1
+                      Estimating Equations   Max. cluster size:                   4
+Family:                           Gaussian   Mean cluster size:                 3.9
+Dependence structure:         Independence   Num. iterations:                     2
+Date:                     Fri, 28 Jan 2022   Scale:                          51.633
+Covariance type:                    robust   Time:                         17:30:23
+==============================================================================================================
+                                                 coef    std err          z      P>|z|      [0.025      0.975]
+--------------------------------------------------------------------------------------------------------------
+Intercept                                     34.2683      0.924     37.076      0.000      32.457      36.080
+C(day, Treatment(1))[T.2]                     -0.8683      1.102     -0.788      0.431      -3.029       1.292
+C(day, Treatment(1))[T.3]                     -2.0119      1.362     -1.477      0.140      -4.681       0.658
+C(day, Treatment(1))[T.4]                     -3.8580      1.534     -2.515      0.012      -6.865      -0.851
+C(Group)[T.EWRE]                              -1.2195      1.332     -0.915      0.360      -3.831       1.392
+C(day, Treatment(1))[T.2]:C(Group)[T.EWRE]     1.4049      1.309      1.074      0.283      -1.160       3.970
+C(day, Treatment(1))[T.3]:C(Group)[T.EWRE]     0.6881      1.690      0.407      0.684      -2.624       4.000
+C(day, Treatment(1))[T.4]:C(Group)[T.EWRE]     2.4843      1.821      1.364      0.172      -1.085       6.053
+==============================================================================
+Skew:                         -0.7875   Kurtosis:                       0.4270
+Centered skew:                -0.2328   Centered kurtosis:              1.5182
+==============================================================================

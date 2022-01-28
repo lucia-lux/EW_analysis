@@ -1,0 +1,26 @@
+memory_time_vague_clear:
+                                GEE Regression Results                                
+======================================================================================
+Dep. Variable:        memory_time_vague_clear   No. Observations:                  303
+Model:                                    GEE   No. clusters:                       82
+Method:                           Generalized   Min. cluster size:                   1
+                         Estimating Equations   Max. cluster size:                   4
+Family:                              Gaussian   Mean cluster size:                 3.7
+Dependence structure:            Independence   Num. iterations:                     2
+Date:                        Fri, 28 Jan 2022   Scale:                           2.265
+Covariance type:                       robust   Time:                         17:30:23
+==============================================================================================================
+                                                 coef    std err          z      P>|z|      [0.025      0.975]
+--------------------------------------------------------------------------------------------------------------
+Intercept                                      5.5610      0.256     21.729      0.000       5.059       6.063
+C(day, Treatment(1))[T.2]                     -0.0753      0.301     -0.250      0.803      -0.665       0.515
+C(day, Treatment(1))[T.3]                     -0.3110      0.286     -1.089      0.276      -0.871       0.249
+C(day, Treatment(1))[T.4]                     -0.0181      0.280     -0.065      0.948      -0.567       0.531
+C(Group)[T.EWRE]                              -0.0732      0.322     -0.227      0.820      -0.704       0.558
+C(day, Treatment(1))[T.2]:C(Group)[T.EWRE]    -0.1686      0.368     -0.458      0.647      -0.890       0.553
+C(day, Treatment(1))[T.3]:C(Group)[T.EWRE]     0.2286      0.393      0.581      0.561      -0.542       1.000
+C(day, Treatment(1))[T.4]:C(Group)[T.EWRE]    -0.0373      0.405     -0.092      0.927      -0.830       0.756
+==============================================================================
+Skew:                         -0.8327   Kurtosis:                       0.0537
+Centered skew:                -0.3940   Centered kurtosis:              1.4148
+==============================================================================

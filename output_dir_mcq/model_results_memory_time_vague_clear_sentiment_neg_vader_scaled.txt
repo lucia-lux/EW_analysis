@@ -1,0 +1,34 @@
+memory_time_vague_clear:
+                                GEE Regression Results                                
+======================================================================================
+Dep. Variable:        memory_time_vague_clear   No. Observations:                  303
+Model:                                    GEE   No. clusters:                       82
+Method:                           Generalized   Min. cluster size:                   1
+                         Estimating Equations   Max. cluster size:                   4
+Family:                              Gaussian   Mean cluster size:                 3.7
+Dependence structure:            Independence   Num. iterations:                     2
+Date:                        Fri, 28 Jan 2022   Scale:                           2.294
+Covariance type:                       robust   Time:                         17:30:21
+=========================================================================================================================================
+                                                                            coef    std err          z      P>|z|      [0.025      0.975]
+-----------------------------------------------------------------------------------------------------------------------------------------
+Intercept                                                                 5.4239      0.322     16.828      0.000       4.792       6.056
+C(day, Treatment(1))[T.2]                                                 0.0951      0.392      0.242      0.808      -0.674       0.864
+C(day, Treatment(1))[T.3]                                                -0.3408      0.364     -0.937      0.349      -1.054       0.372
+C(day, Treatment(1))[T.4]                                                 0.1585      0.324      0.489      0.625      -0.476       0.793
+C(Group)[T.EWRE]                                                          0.2596      0.403      0.644      0.520      -0.531       1.050
+C(day, Treatment(1))[T.2]:C(Group)[T.EWRE]                               -0.4798      0.496     -0.967      0.333      -1.452       0.492
+C(day, Treatment(1))[T.3]:C(Group)[T.EWRE]                                0.1585      0.487      0.326      0.745      -0.796       1.113
+C(day, Treatment(1))[T.4]:C(Group)[T.EWRE]                               -0.3552      0.482     -0.737      0.461      -1.300       0.590
+sentiment_neg_vader_scaled                                                0.5010      0.490      1.023      0.306      -0.459       1.461
+C(day, Treatment(1))[T.2]:sentiment_neg_vader_scaled                     -0.6442      0.712     -0.905      0.365      -2.039       0.751
+C(day, Treatment(1))[T.3]:sentiment_neg_vader_scaled                      0.1790      0.704      0.254      0.799      -1.200       1.558
+C(day, Treatment(1))[T.4]:sentiment_neg_vader_scaled                     -0.6815      0.661     -1.031      0.303      -1.977       0.614
+C(Group)[T.EWRE]:sentiment_neg_vader_scaled                              -0.9902      0.694     -1.428      0.153      -2.350       0.369
+C(day, Treatment(1))[T.2]:C(Group)[T.EWRE]:sentiment_neg_vader_scaled     0.9459      0.967      0.979      0.328      -0.949       2.841
+C(day, Treatment(1))[T.3]:C(Group)[T.EWRE]:sentiment_neg_vader_scaled    -0.1187      1.011     -0.117      0.907      -2.100       1.863
+C(day, Treatment(1))[T.4]:C(Group)[T.EWRE]:sentiment_neg_vader_scaled     0.6803      1.087      0.626      0.531      -1.449       2.810
+==============================================================================
+Skew:                         -0.7839   Kurtosis:                      -0.0063
+Centered skew:                -0.3023   Centered kurtosis:              1.2038
+==============================================================================
