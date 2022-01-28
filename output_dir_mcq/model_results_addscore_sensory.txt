@@ -1,0 +1,23 @@
+score_sensory:
+                               GEE Regression Results                              
+===================================================================================
+Dep. Variable:               score_sensory   No. Observations:                  321
+Model:                                 GEE   No. clusters:                       82
+Method:                        Generalized   Min. cluster size:                   1
+                      Estimating Equations   Max. cluster size:                   4
+Family:                           Gaussian   Mean cluster size:                 3.9
+Dependence structure:         Independence   Num. iterations:                     2
+Date:                     Fri, 28 Jan 2022   Scale:                          39.114
+Covariance type:                    robust   Time:                         17:54:05
+=============================================================================================
+                                coef    std err          z      P>|z|      [0.025      0.975]
+---------------------------------------------------------------------------------------------
+Intercept                     8.7822      0.747     11.755      0.000       7.318      10.246
+C(day, Treatment(1))[T.2]    -0.1015      0.611     -0.166      0.868      -1.299       1.096
+C(day, Treatment(1))[T.3]    -0.1954      0.679     -0.288      0.773      -1.526       1.135
+C(day, Treatment(1))[T.4]    -0.0688      0.698     -0.099      0.921      -1.438       1.300
+C(Group)[T.EWRE]              0.2162      1.167      0.185      0.853      -2.071       2.503
+==============================================================================
+Skew:                          0.6710   Kurtosis:                      -0.0123
+Centered skew:                 0.0220   Centered kurtosis:              1.6466
+==============================================================================

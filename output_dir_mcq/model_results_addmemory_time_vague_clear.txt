@@ -1,0 +1,23 @@
+memory_time_vague_clear:
+                                GEE Regression Results                                
+======================================================================================
+Dep. Variable:        memory_time_vague_clear   No. Observations:                  303
+Model:                                    GEE   No. clusters:                       82
+Method:                           Generalized   Min. cluster size:                   1
+                         Estimating Equations   Max. cluster size:                   4
+Family:                              Gaussian   Mean cluster size:                 3.7
+Dependence structure:            Independence   Num. iterations:                     2
+Date:                        Fri, 28 Jan 2022   Scale:                           2.247
+Covariance type:                       robust   Time:                         17:54:05
+=============================================================================================
+                                coef    std err          z      P>|z|      [0.025      0.975]
+---------------------------------------------------------------------------------------------
+Intercept                     5.5589      0.222     25.009      0.000       5.123       5.995
+C(day, Treatment(1))[T.2]    -0.1664      0.182     -0.917      0.359      -0.522       0.189
+C(day, Treatment(1))[T.3]    -0.1952      0.197     -0.991      0.322      -0.581       0.191
+C(day, Treatment(1))[T.4]    -0.0373      0.203     -0.184      0.854      -0.435       0.360
+C(Group)[T.EWRE]             -0.0690      0.250     -0.276      0.783      -0.560       0.422
+==============================================================================
+Skew:                         -0.8298   Kurtosis:                       0.0396
+Centered skew:                -0.3705   Centered kurtosis:              1.4131
+==============================================================================
