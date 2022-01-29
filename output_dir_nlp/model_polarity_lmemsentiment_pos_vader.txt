@@ -1,0 +1,36 @@
+sentiment_pos_vader:
+                                 Mixed Linear Model Regression Results
+=======================================================================================================
+Model:                          MixedLM             Dependent Variable:             sentiment_pos_vader
+No. Observations:               481                 Method:                         REML               
+No. Groups:                     122                 Scale:                          0.0006             
+Min. group size:                1                   Log-Likelihood:                 855.6928           
+Max. group size:                4                   Converged:                      Yes                
+Mean group size:                3.9                                                                    
+-------------------------------------------------------------------------------------------------------
+                                                             Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+-------------------------------------------------------------------------------------------------------
+Intercept                                                     0.054    0.006  9.628 0.000  0.043  0.065
+C(Group, Treatment('CTR'))[T.EW]                              0.042    0.008  5.376 0.000  0.027  0.058
+C(Group, Treatment('CTR'))[T.EWRE]                            0.031    0.008  3.972 0.000  0.016  0.047
+C(day, Treatment(1))[T.2]                                    -0.008    0.007 -1.213 0.225 -0.021  0.005
+C(day, Treatment(1))[T.3]                                     0.012    0.007  1.659 0.097 -0.002  0.027
+C(day, Treatment(1))[T.4]                                     0.020    0.007  3.020 0.003  0.007  0.033
+C(Group, Treatment('CTR'))[T.EW]:C(day, Treatment(1))[T.2]    0.002    0.009  0.179 0.858 -0.017  0.020
+C(Group, Treatment('CTR'))[T.EWRE]:C(day, Treatment(1))[T.2]  0.031    0.009  3.260 0.001  0.012  0.049
+C(Group, Treatment('CTR'))[T.EW]:C(day, Treatment(1))[T.3]   -0.005    0.011 -0.452 0.651 -0.025  0.016
+C(Group, Treatment('CTR'))[T.EWRE]:C(day, Treatment(1))[T.3]  0.000    0.010  0.029 0.977 -0.020  0.021
+C(Group, Treatment('CTR'))[T.EW]:C(day, Treatment(1))[T.4]   -0.013    0.009 -1.386 0.166 -0.031  0.005
+C(Group, Treatment('CTR'))[T.EWRE]:C(day, Treatment(1))[T.4]  0.022    0.009  2.363 0.018  0.004  0.040
+Group Var                                                     0.001                                    
+Group x C(day)[T.2] Cov                                      -0.000                                    
+C(day)[T.2] Var                                               0.001                                    
+Group x C(day)[T.3] Cov                                      -0.000                                    
+C(day)[T.2] x C(day)[T.3] Cov                                 0.000                                    
+C(day)[T.3] Var                                               0.001                                    
+Group x C(day)[T.4] Cov                                      -0.000                                    
+C(day)[T.2] x C(day)[T.4] Cov                                -0.000                                    
+C(day)[T.3] x C(day)[T.4] Cov                                -0.000                                    
+C(day)[T.4] Var                                               0.000                                    
+=======================================================================================================
+
