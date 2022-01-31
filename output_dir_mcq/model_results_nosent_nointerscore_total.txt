@@ -1,0 +1,20 @@
+score_total:
+                Mixed Linear Model Regression Results
+=====================================================================
+Model:                MixedLM     Dependent Variable:     score_total
+No. Observations:     321         Method:                 REML       
+No. Groups:           82          Scale:                  113.0992   
+Min. group size:      1           Log-Likelihood:         -1272.8413 
+Max. group size:      4           Converged:              Yes        
+Mean group size:      3.9                                            
+---------------------------------------------------------------------
+                           Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+---------------------------------------------------------------------
+Intercept                  63.410    2.184 29.033 0.000 59.129 67.690
+C(day, Treatment(1))[T.2]  -1.389    1.669 -0.832 0.405 -4.659  1.882
+C(day, Treatment(1))[T.3]  -3.724    1.683 -2.213 0.027 -7.022 -0.426
+C(day, Treatment(1))[T.4]  -3.838    1.683 -2.281 0.023 -7.136 -0.540
+C(Group)[T.EWRE]            0.522    2.739  0.191 0.849 -4.846  5.891
+id Var                    124.259    2.641                           
+=====================================================================
+

@@ -1,0 +1,23 @@
+sentiment_pos_vader:
+                         Mixed Linear Model Regression Results
+========================================================================================
+Model:                     MixedLM        Dependent Variable:        sentiment_pos_vader
+No. Observations:          321            Method:                    REML               
+No. Groups:                82             Scale:                     0.0013             
+Min. group size:           1              Log-Likelihood:            549.5327           
+Max. group size:           4              Converged:                 Yes                
+Mean group size:           3.9                                                          
+----------------------------------------------------------------------------------------
+                                              Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+----------------------------------------------------------------------------------------
+Intercept                                      0.096    0.006 14.871 0.000  0.084  0.109
+C(Group, Treatment('EW'))[T.EWRE]             -0.011    0.009 -1.207 0.227 -0.029  0.007
+C(day)[T.2]                                   -0.006    0.008 -0.800 0.424 -0.022  0.009
+C(day)[T.3]                                    0.008    0.008  0.935 0.350 -0.008  0.023
+C(day)[T.4]                                    0.007    0.008  0.877 0.380 -0.009  0.023
+C(Group, Treatment('EW'))[T.EWRE]:C(day)[T.2]  0.029    0.011  2.583 0.010  0.007  0.051
+C(Group, Treatment('EW'))[T.EWRE]:C(day)[T.3]  0.005    0.011  0.408 0.683 -0.018  0.027
+C(Group, Treatment('EW'))[T.EWRE]:C(day)[T.4]  0.034    0.011  2.998 0.003  0.012  0.056
+Group Var                                      0.000    0.004                           
+========================================================================================
+

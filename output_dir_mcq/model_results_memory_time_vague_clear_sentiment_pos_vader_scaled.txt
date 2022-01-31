@@ -1,34 +1,31 @@
 memory_time_vague_clear:
-                                GEE Regression Results                                
-======================================================================================
-Dep. Variable:        memory_time_vague_clear   No. Observations:                  303
-Model:                                    GEE   No. clusters:                       82
-Method:                           Generalized   Min. cluster size:                   1
-                         Estimating Equations   Max. cluster size:                   4
-Family:                              Gaussian   Mean cluster size:                 3.7
-Dependence structure:            Independence   Num. iterations:                     2
-Date:                        Fri, 28 Jan 2022   Scale:                           2.293
-Covariance type:                       robust   Time:                         17:30:21
-=========================================================================================================================================
-                                                                            coef    std err          z      P>|z|      [0.025      0.975]
------------------------------------------------------------------------------------------------------------------------------------------
-Intercept                                                                 5.5002      0.277     19.844      0.000       4.957       6.043
-C(day, Treatment(1))[T.2]                                                -0.0318      0.297     -0.107      0.915      -0.615       0.551
-C(day, Treatment(1))[T.3]                                                -0.0805      0.303     -0.266      0.790      -0.674       0.513
-C(day, Treatment(1))[T.4]                                                -0.1119      0.336     -0.333      0.739      -0.770       0.546
-C(Group)[T.EWRE]                                                         -0.0123      0.340     -0.036      0.971      -0.679       0.655
-C(day, Treatment(1))[T.2]:C(Group)[T.EWRE]                               -0.3326      0.393     -0.845      0.398      -1.104       0.439
-C(day, Treatment(1))[T.3]:C(Group)[T.EWRE]                               -0.0313      0.411     -0.076      0.939      -0.837       0.774
-C(day, Treatment(1))[T.4]:C(Group)[T.EWRE]                                0.0443      0.476      0.093      0.926      -0.889       0.977
-sentiment_pos_vader_scaled                                                0.2551      0.441      0.578      0.563      -0.609       1.120
-C(day, Treatment(1))[T.2]:sentiment_pos_vader_scaled                     -0.1306      0.528     -0.247      0.805      -1.166       0.905
-C(day, Treatment(1))[T.3]:sentiment_pos_vader_scaled                     -0.7372      0.580     -1.271      0.204      -1.874       0.399
-C(day, Treatment(1))[T.4]:sentiment_pos_vader_scaled                      0.1819      0.530      0.343      0.731      -0.857       1.220
-C(Group)[T.EWRE]:sentiment_pos_vader_scaled                              -0.2562      0.572     -0.448      0.654      -1.377       0.865
-C(day, Treatment(1))[T.2]:C(Group)[T.EWRE]:sentiment_pos_vader_scaled     0.4188      0.664      0.630      0.528      -0.883       1.721
-C(day, Treatment(1))[T.3]:C(Group)[T.EWRE]:sentiment_pos_vader_scaled     0.8663      0.748      1.159      0.247      -0.599       2.332
-C(day, Treatment(1))[T.4]:C(Group)[T.EWRE]:sentiment_pos_vader_scaled    -0.1623      0.717     -0.226      0.821      -1.567       1.243
-==============================================================================
-Skew:                         -0.7866   Kurtosis:                       0.0032
-Centered skew:                -0.4236   Centered kurtosis:              1.3462
-==============================================================================
+                                     Mixed Linear Model Regression Results
+================================================================================================================
+Model:                           MixedLM               Dependent Variable:               memory_time_vague_clear
+No. Observations:                303                   Method:                           REML                   
+No. Groups:                      82                    Scale:                            1.2311                 
+Min. group size:                 1                     Log-Likelihood:                   -519.8639              
+Max. group size:                 4                     Converged:                        Yes                    
+Mean group size:                 3.7                                                                            
+----------------------------------------------------------------------------------------------------------------
+                                                                      Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+----------------------------------------------------------------------------------------------------------------
+Intercept                                                              5.461    0.253 21.571 0.000  4.965  5.957
+C(day, Treatment(1))[T.2]                                              0.009    0.274  0.033 0.974 -0.529  0.547
+C(day, Treatment(1))[T.3]                                             -0.058    0.285 -0.205 0.837 -0.616  0.499
+C(day, Treatment(1))[T.4]                                             -0.049    0.296 -0.166 0.868 -0.630  0.531
+C(Group)[T.EWRE]                                                       0.029    0.349  0.083 0.934 -0.655  0.713
+C(day, Treatment(1))[T.2]:C(Group)[T.EWRE]                            -0.459    0.390 -1.177 0.239 -1.224  0.305
+C(day, Treatment(1))[T.3]:C(Group)[T.EWRE]                            -0.143    0.387 -0.370 0.712 -0.901  0.615
+C(day, Treatment(1))[T.4]:C(Group)[T.EWRE]                            -0.137    0.431 -0.319 0.750 -0.982  0.707
+sentiment_pos_vader_scaled                                             0.421    0.345  1.218 0.223 -0.256  1.098
+C(day, Treatment(1))[T.2]:sentiment_pos_vader_scaled                  -0.756    0.497 -1.522 0.128 -1.730  0.218
+C(day, Treatment(1))[T.3]:sentiment_pos_vader_scaled                  -0.860    0.433 -1.986 0.047 -1.709 -0.011
+C(day, Treatment(1))[T.4]:sentiment_pos_vader_scaled                   0.185    0.473  0.392 0.695 -0.742  1.113
+C(Group)[T.EWRE]:sentiment_pos_vader_scaled                           -0.451    0.489 -0.922 0.356 -1.410  0.508
+C(day, Treatment(1))[T.2]:C(Group)[T.EWRE]:sentiment_pos_vader_scaled  1.274    0.664  1.918 0.055 -0.028  2.577
+C(day, Treatment(1))[T.3]:C(Group)[T.EWRE]:sentiment_pos_vader_scaled  1.219    0.608  2.006 0.045  0.028  2.410
+C(day, Treatment(1))[T.4]:C(Group)[T.EWRE]:sentiment_pos_vader_scaled -0.096    0.639 -0.151 0.880 -1.348  1.156
+id Var                                                                 1.119    0.255                           
+================================================================================================================
+

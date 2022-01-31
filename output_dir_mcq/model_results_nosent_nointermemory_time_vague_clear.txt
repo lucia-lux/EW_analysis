@@ -1,0 +1,20 @@
+memory_time_vague_clear:
+                Mixed Linear Model Regression Results
+=====================================================================
+Model:            MixedLM Dependent Variable: memory_time_vague_clear
+No. Observations: 303     Method:             REML                   
+No. Groups:       82      Scale:              1.2606                 
+Min. group size:  1       Log-Likelihood:     -523.5696              
+Max. group size:  4       Converged:          Yes                    
+Mean group size:  3.7                                                
+---------------------------------------------------------------------
+                           Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+---------------------------------------------------------------------
+Intercept                   5.572    0.212 26.244 0.000  5.156  5.988
+C(day, Treatment(1))[T.2]  -0.201    0.180 -1.116 0.264 -0.553  0.152
+C(day, Treatment(1))[T.3]  -0.221    0.182 -1.211 0.226 -0.578  0.136
+C(day, Treatment(1))[T.4]  -0.049    0.183 -0.267 0.790 -0.408  0.310
+C(Group)[T.EWRE]           -0.095    0.261 -0.365 0.715 -0.607  0.416
+id Var                      1.040    0.235                           
+=====================================================================
+
