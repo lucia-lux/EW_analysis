@@ -1,0 +1,23 @@
+score_context:
+                             Mixed Linear Model Regression Results
+===============================================================================================
+Model:                        MixedLM             Dependent Variable:             score_context
+No. Observations:             321                 Method:                         REML         
+No. Groups:                   82                  Scale:                          15.6807      
+Min. group size:              1                   Log-Likelihood:                 -929.3074    
+Max. group size:              4                   Converged:                      Yes          
+Mean group size:              3.9                                                              
+-----------------------------------------------------------------------------------------------
+                                                     Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+-----------------------------------------------------------------------------------------------
+Intercept                                            15.256    0.659 23.159 0.000 13.965 16.547
+C(day, Treatment(1))[T.2]                            -0.194    0.799 -0.242 0.809 -1.759  1.372
+C(day, Treatment(1))[T.3]                            -1.315    0.777 -1.693 0.090 -2.838  0.207
+C(day, Treatment(1))[T.4]                            -0.523    0.756 -0.692 0.489 -2.006  0.959
+sentiment_neg_vader_scaled                            1.014    1.177  0.861 0.389 -1.294  3.321
+C(day, Treatment(1))[T.2]:sentiment_neg_vader_scaled -1.226    1.645 -0.745 0.456 -4.449  1.998
+C(day, Treatment(1))[T.3]:sentiment_neg_vader_scaled -0.116    1.587 -0.073 0.942 -3.227  2.996
+C(day, Treatment(1))[T.4]:sentiment_neg_vader_scaled -0.761    1.619 -0.470 0.638 -3.935  2.412
+id Var                                                7.009    0.514                           
+===============================================================================================
+

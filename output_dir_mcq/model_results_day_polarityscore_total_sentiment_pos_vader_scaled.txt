@@ -1,0 +1,23 @@
+score_total:
+                             Mixed Linear Model Regression Results
+================================================================================================
+Model:                         MixedLM              Dependent Variable:              score_total
+No. Observations:              321                  Method:                          REML       
+No. Groups:                    82                   Scale:                           114.6249   
+Min. group size:               1                    Log-Likelihood:                  -1267.9001 
+Max. group size:               4                    Converged:                       Yes        
+Mean group size:               3.9                                                              
+------------------------------------------------------------------------------------------------
+                                                      Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+------------------------------------------------------------------------------------------------
+Intercept                                             63.636    1.737 36.640 0.000 60.232 67.041
+C(day, Treatment(1))[T.2]                             -1.341    1.814 -0.739 0.460 -4.896  2.213
+C(day, Treatment(1))[T.3]                             -3.547    1.807 -1.962 0.050 -7.089 -0.004
+C(day, Treatment(1))[T.4]                             -3.065    2.012 -1.523 0.128 -7.009  0.880
+sentiment_pos_vader_scaled                             0.226    2.316  0.097 0.922 -4.313  4.764
+C(day, Treatment(1))[T.2]:sentiment_pos_vader_scaled  -0.263    3.048 -0.086 0.931 -6.236  5.711
+C(day, Treatment(1))[T.3]:sentiment_pos_vader_scaled  -0.711    2.867 -0.248 0.804 -6.331  4.908
+C(day, Treatment(1))[T.4]:sentiment_pos_vader_scaled  -1.644    2.968 -0.554 0.580 -7.460  4.173
+id Var                                               122.584    2.604                           
+================================================================================================
+

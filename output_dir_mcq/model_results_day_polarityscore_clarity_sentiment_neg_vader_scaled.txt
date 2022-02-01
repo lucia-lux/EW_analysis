@@ -1,0 +1,23 @@
+score_clarity:
+                             Mixed Linear Model Regression Results
+===============================================================================================
+Model:                        MixedLM             Dependent Variable:             score_clarity
+No. Observations:             321                 Method:                         REML         
+No. Groups:                   82                  Scale:                          26.1350      
+Min. group size:              1                   Log-Likelihood:                 -1031.0591   
+Max. group size:              4                   Converged:                      Yes          
+Mean group size:              3.9                                                              
+-----------------------------------------------------------------------------------------------
+                                                     Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+-----------------------------------------------------------------------------------------------
+Intercept                                            34.608    0.949 36.486 0.000 32.749 36.467
+C(day, Treatment(1))[T.2]                            -1.185    1.038 -1.141 0.254 -3.219  0.850
+C(day, Treatment(1))[T.3]                            -2.861    1.009 -2.836 0.005 -4.838 -0.884
+C(day, Treatment(1))[T.4]                            -3.413    0.982 -3.476 0.001 -5.337 -1.489
+sentiment_neg_vader_scaled                           -2.818    1.562 -1.804 0.071 -5.879  0.244
+C(day, Treatment(1))[T.2]:sentiment_neg_vader_scaled  3.024    2.163  1.398 0.162 -1.214  7.263
+C(day, Treatment(1))[T.3]:sentiment_neg_vader_scaled  4.274    2.084  2.051 0.040  0.189  8.358
+C(day, Treatment(1))[T.4]:sentiment_neg_vader_scaled  2.566    2.124  1.208 0.227 -1.597  6.728
+id Var                                               24.940    1.134                           
+===============================================================================================
+

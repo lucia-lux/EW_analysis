@@ -1,0 +1,23 @@
+score_sensory:
+                             Mixed Linear Model Regression Results
+===============================================================================================
+Model:                        MixedLM             Dependent Variable:             score_sensory
+No. Observations:             321                 Method:                         REML         
+No. Groups:                   82                  Scale:                          14.3675      
+Min. group size:              1                   Log-Likelihood:                 -956.8646    
+Max. group size:              4                   Converged:                      Yes          
+Mean group size:              3.9                                                              
+-----------------------------------------------------------------------------------------------
+                                                     Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+-----------------------------------------------------------------------------------------------
+Intercept                                             8.958    0.795 11.268 0.000  7.400 10.516
+C(day, Treatment(1))[T.2]                             0.266    0.773  0.345 0.730 -1.248  1.780
+C(day, Treatment(1))[T.3]                            -0.675    0.750 -0.900 0.368 -2.146  0.796
+C(day, Treatment(1))[T.4]                            -0.517    0.730 -0.708 0.479 -1.948  0.914
+sentiment_neg_vader_scaled                           -0.201    1.180 -0.171 0.865 -2.513  2.111
+C(day, Treatment(1))[T.2]:sentiment_neg_vader_scaled -1.359    1.621 -0.839 0.402 -4.537  1.818
+C(day, Treatment(1))[T.3]:sentiment_neg_vader_scaled  2.227    1.563  1.425 0.154 -0.836  5.290
+C(day, Treatment(1))[T.4]:sentiment_neg_vader_scaled  2.996    1.590  1.884 0.060 -0.121  6.113
+id Var                                               24.514    1.359                           
+===============================================================================================
+

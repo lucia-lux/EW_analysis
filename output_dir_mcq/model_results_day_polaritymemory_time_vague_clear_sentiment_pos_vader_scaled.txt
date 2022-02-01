@@ -1,0 +1,23 @@
+memory_time_vague_clear:
+                             Mixed Linear Model Regression Results
+===============================================================================================
+Model:                      MixedLM         Dependent Variable:         memory_time_vague_clear
+No. Observations:           303             Method:                     REML                   
+No. Groups:                 82              Scale:                      1.2749                 
+Min. group size:            1               Log-Likelihood:             -524.7732              
+Max. group size:            4               Converged:                  Yes                    
+Mean group size:            3.7                                                                
+-----------------------------------------------------------------------------------------------
+                                                     Coef.  Std.Err.   z    P>|z| [0.025 0.975]
+-----------------------------------------------------------------------------------------------
+Intercept                                             5.502    0.171 32.103 0.000  5.166  5.838
+C(day, Treatment(1))[T.2]                            -0.214    0.195 -1.095 0.273 -0.597  0.169
+C(day, Treatment(1))[T.3]                            -0.176    0.195 -0.902 0.367 -0.557  0.206
+C(day, Treatment(1))[T.4]                            -0.124    0.217 -0.571 0.568 -0.548  0.301
+sentiment_pos_vader_scaled                            0.146    0.244  0.601 0.548 -0.331  0.624
+C(day, Treatment(1))[T.2]:sentiment_pos_vader_scaled -0.024    0.326 -0.074 0.941 -0.663  0.614
+C(day, Treatment(1))[T.3]:sentiment_pos_vader_scaled -0.230    0.304 -0.756 0.449 -0.825  0.366
+C(day, Treatment(1))[T.4]:sentiment_pos_vader_scaled  0.041    0.316  0.131 0.896 -0.578  0.661
+id Var                                                1.022    0.231                           
+===============================================================================================
+
